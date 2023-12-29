@@ -1,0 +1,32 @@
+.prof{
+    
+    width:15%;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+
+.prof>h2{
+    padding: 10px;
+    font-size: 15px;
+    font-weight: 650;
+    color: white;
+    text-decoration: none;
+    
+    
+}
+
+.prof__image{
+    height: 100px;
+    
+    cursor: pointer;
+    transition: transform 0.5s;
+    margin-right:auto
+}
+
+.prof__image:hover{
+    transform: scale(1.08) ;
+    
+    opacity: 1;
+}

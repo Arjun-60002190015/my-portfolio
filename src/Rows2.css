@@ -1,0 +1,16 @@
+.rows2{
+    
+    display: flex;
+    color: white;
+    
+    
+    overflow-y: hidden;
+    overflow-x: scroll;
+    margin: 20px;
+    object-fit:cover;
+}
+
+.rows2::-webkit-scrollbar{
+    display: none;
+
+}

@@ -1,0 +1,15 @@
+.rows3{
+    
+    display: flex;
+    color: white;
+    margin: 20px;
+    display: flex;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    
+}
+
+.rows3::-webkit-scrollbar{
+    display: none;
+
+}

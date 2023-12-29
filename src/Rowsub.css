@@ -1,0 +1,26 @@
+.rowsub__image{
+    height: 100px;
+    width: auto;
+    
+    transition: transform 0.5s;
+    margin-right:auto
+}
+.rowsub__image:hover{
+    transform: scale(1.08) ;
+    
+    opacity: 1;
+}
+
+.rowsub{
+    
+    
+    height:20vh;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+.rowsub>h2{
+    font-size: 15px;
+    font-weight: 650;
+}
