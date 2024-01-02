@@ -12,6 +12,8 @@ import Row4 from '../Row4';
 import Lottie from 'lottie-react';
 import animationData from '../assets/Animation - 1703751593145.json'
 import Rows1 from '../Rows1';
+import {motion as m} from 'framer-motion'
+import Animat from './Animat';
 
 
 
@@ -20,10 +22,14 @@ import Rows1 from '../Rows1';
 
 
 function HomeScreen() {
-  const f = false;
+  
   return (
     
-    <div className="homeScreen">
+    <m.div 
+    initial={{opacity:0}}
+    animate={{opacity:1}}
+    transition={{duration: 0.75, ease:"easeOut"}}
+    className="homeScreen">
        
       
       <Nav/>
@@ -44,7 +50,7 @@ function HomeScreen() {
       
       
       
-    </div>
+    </m.div>
     
       
       

@@ -20,7 +20,14 @@
     width: 120px;
     padding-left: 20px;
     cursor: pointer;
+    transition: 0.5s;
 
+}
+
+.nav__logo:hover{
+    transform: scale(1.08) ;
+    
+    opacity: 1;
 }
 
 .nav__black{
@@ -33,5 +40,12 @@
     right: 20px;
     width: 40px;
     cursor: pointer;
+    transition: 0.3s;
 
+}
+
+.nav__avatar:hover{
+    transform: scale(1.08) ;
+    
+    opacity: 1;
 }

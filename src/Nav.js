@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 
 import './Nav.css'
 import { useNavigate } from 'react-router-dom';
+import {motion as m} from 'framer-motion'
 
 function Nav() {
     const[show, handleShow] = useState(false);
@@ -21,7 +22,11 @@ function Nav() {
         
     }, [])
   return (
-    <div className={`nav ${show && 'nav__black'}`}>
+    <m.div
+    initial={{opacity:0}}
+    animate={{opacity:1}}
+    transition={{duration: 0.75, ease:"easeOut"}}
+     className={`nav ${show && 'nav__black'}`}>
         <div className='nav__content'>
         <img 
         onClick={()=> history("/")}
@@ -36,7 +41,7 @@ function Nav() {
         </div>
         
       
-    </div>
+    </m.div>
   )
 }
 

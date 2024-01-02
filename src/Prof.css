@@ -1,10 +1,10 @@
 .prof{
     
-    width:15%;
-    padding: 0px;
+    height:20vh;
     display: flex;
     flex-direction: column;
-    margin: 20px;
+    margin: 10px;
+    
 }
 
 .prof>h2{

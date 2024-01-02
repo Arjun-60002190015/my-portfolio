@@ -5,6 +5,8 @@
 
 }
 
+
+
 .profileScreen__body{
     display: flex;
     flex-direction: column;
@@ -19,15 +21,24 @@
 }
 
 .profileScreen__body>h1{
-    font-size: 40px;
+    padding: 15px;
+    font-size: 35px;
     font-weight: 400;
     border-bottom: 1px solid #282c2d;
     margin-bottom: 20px;
 }
 
 .profileScreen__info{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    left : 0;
+    right: 0;
+    padding-top: 8%;
+    max-width: 800px;   
     display: flex;
     flex-direction: row;
+    text-align: center;
     
 }
 
@@ -46,13 +57,26 @@
     padding: 10px 20px;
     font-size: 1 rem;
     margin-top: 5%;
-    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
     color: #fff;
+    left : 0;
+    right: 0;
     background-color: #e50914;
     font-weight: 600;
     border: none;
     cursor: pointer;
+    transition: transform 0.5s;
 }
+
+.profileScreen__signOut:hover{
+    transform: scale(1.08) ;
+    
+    opacity: 1;
+}
+
+
 
 .profileScreen__info>img{
     height: 100px;

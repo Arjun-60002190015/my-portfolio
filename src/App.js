@@ -11,6 +11,8 @@ import Lottie from 'lottie-react';
 import animationData from './assets/Animation - 1703751593145.json'
 import About from './screens/About';
 import Education from './screens/Education';
+import { AnimatePresence } from 'framer-motion';
+import Animat from './screens/Animat';
 
 
 function App() {
@@ -43,6 +45,7 @@ function App() {
 
   return (
     <div className="app">
+      <AnimatePresence>
       
       <BrowserRouter>
       {!user ? (
@@ -52,15 +55,16 @@ function App() {
             <Route path='/profile' element={<ProfileScreen/>}/>
             <Route path='/about' element={<About/>}/>
             <Route path='/education' element={<Education/>}/>
-            
-          
             <Route path="/" element={<HomeScreen />} />
+            <Route path="/animation" element={<Animat />} />
+
             
 
           
         </Routes>
         )}
       </BrowserRouter>
+      </AnimatePresence>
 
     </div>
   );

@@ -8,21 +8,29 @@ import { Link, useNavigate } from 'react-router-dom';
 import LoginScreen from './LoginScreen';
 import Prof from '../Prof';
 import About from './About';
+import {motion as m} from 'framer-motion'
 
 
 function ProfileScreen() {
   const user = useSelector(selectUser);
+  const history = useNavigate();
   
   
 
   
 
   return (
-    <div className='profileScreen'>
+    <m.div initial={{opacity:0}}
+    animate={{opacity:1}}
+    transition={{duration: 0.75 , ease:"easeOut"}}
+    className='profileScreen'>
         <Nav/>
         <div className='profileScreen__body'>
           <h1> Who's watching?</h1>
-          <div className='profileScreen__info'>
+          
+
+        </div>
+        <div className='profileScreen__info'>
             
             <Prof 
             
@@ -50,10 +58,13 @@ image={'https://i.pinimg.com/564x/b2/a0/29/b2a029a6c2757e9d3a09265e3d07d49d.jpg'
             
             
           </div>
+          <button onClick={(()=> auth.signOut())}
+                   className='profileScreen__signOut'>Sign Out</button>
 
-        </div>
+          <button onClick={(()=> history("/animation"))}
+                   className='profileScreen__signOut'>Animate</button>
       
-    </div>
+    </m.div>
   )
 }
 
@@ -76,8 +87,7 @@ function ProfileScreen() {
             <h2>{}</h2>
                 <div className='profileScreen__plans'>
                   <h3>Plans</h3>
-                  <button onClick={(()=> auth.signOut())}
-                   className='profileScreen__signOut'>Sign Out</button>
+                  
                 </div>
              </div>
           </div>
