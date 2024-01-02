@@ -52,18 +52,21 @@ function ProfileScreen() {
 image={'https://i.pinimg.com/564x/b2/a0/29/b2a029a6c2757e9d3a09265e3d07d49d.jpg'}
             title={"Skills"}/>
 
-<Prof image={'https://mir-s3-cdn-cf.behance.net/project_modules/disp/64623a33850498.56ba69ac2a6f7.png'}
+          <Prof 
+            link={"https://drive.google.com/file/d/1Uk4VJ4nn0xh5LTBO0qrVY1P9PlKE77Qa/view?usp=sharing"}
+            image={'https://mir-s3-cdn-cf.behance.net/project_modules/disp/64623a33850498.56ba69ac2a6f7.png'}
             title={"Resume"}/>
 
             
             
           </div>
+          <div className='sButon'>
           <button onClick={(()=> auth.signOut())}
                    className='profileScreen__signOut'>Sign Out</button>
 
-          <button onClick={(()=> history("/animation"))}
+<button onClick={(()=> history("/animation"))}
                    className='profileScreen__signOut'>Animate</button>
-      
+      </div>
     </m.div>
   )
 }

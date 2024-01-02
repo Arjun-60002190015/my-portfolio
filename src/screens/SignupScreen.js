@@ -2,6 +2,8 @@ import React, { useRef } from 'react'
 import './SignupScreen.css';
 import { auth } from '../firebase';
 import { useNavigate } from 'react-router-dom';
+import {motion as m} from 'framer-motion'
+
 
 function SignupScreen() {
 
@@ -38,9 +40,13 @@ function SignupScreen() {
         });
     };
   return (
-    <div className='signupScreen'>
+    <m.div initial={{opacity:0}}
+    animate={{opacity:1}}
+    transition={{duration: 0.75 , ease:"easeOut"}} className='signupScreen'>
       <form>
-        <h1> Hello! </h1>
+        <h1> One last step.
+        </h1>
+        
         
         <input ref = {emailRef}placeholder='Email' type='email'/>
         <input ref={passwordRef} placeholder='Password' type='password'/>
@@ -48,16 +54,16 @@ function SignupScreen() {
 
         <h4>
             <span className='signupScreen__gray'>
-                New to Netflix?
+                First time? 
             </span>
             <span className='signupScreen__link' 
             onClick={register}>
-                 Sign Up now.
+                 Sign Up.
             </span>
         </h4>
         
       </form>
-    </div>
+    </m.div>
   )
 }
 

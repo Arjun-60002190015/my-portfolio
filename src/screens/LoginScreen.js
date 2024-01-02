@@ -30,9 +30,9 @@ function LoginScreen() {
           <SignupScreen />
           ): (
             <>
-            <h1>Unlimited Films,  Programmes and more.</h1>
-            <h2>Watch anywhere. Cancel at anytime.</h2>
-            <h3>Ready to watch? Enter your Email</h3>
+            <h1>Hey There. This is a portfolio webapp. Inspired from Netflix.</h1>
+            <h2>To get started, just click the get started button.</h2>
+            <h3>Enter a random email and password and <span className='bold'>sign up(for first time visiters) </span> or sign in (for recurring ones)</h3>
             <div className='loginScreen__input'>
               <form>
                 <input type='email'

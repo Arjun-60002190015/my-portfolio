@@ -46,6 +46,7 @@
 .loginScreen__body>h1{
     font-size: 3.125rem;
     margin-bottom: 20px;
+    font-size: 35px;
     
     
 }
@@ -62,10 +63,14 @@
     right: 0;
     text-align: center;
 }
+.bold{
+    font-weight: 800;
+}
 
 .loginScreen__body>h3{
     font-size: 1.3rem;
     font-weight: 400;
+    font-size: 20px;
     
 }
 .loginScreen__input{

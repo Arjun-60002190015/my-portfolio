@@ -18,11 +18,11 @@
 }
 
 .prof__image{
-    height: 100px;
+    height: 80px;
     
     cursor: pointer;
     transition: transform 0.5s;
-    margin-right:auto
+    
 }
 
 .prof__image:hover{

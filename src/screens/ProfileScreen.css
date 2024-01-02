@@ -29,19 +29,21 @@
 }
 
 .profileScreen__info{
-    width: 50%;
+    width: 60%;
     margin-left: auto;
     margin-right: auto;
-    left : 0;
-    right: 0;
-    padding-top: 8%;
-    max-width: 800px;   
+    
+    
+    max-width: 900px;   
     display: flex;
     flex-direction: row;
     text-align: center;
     
 }
 
+.profileScreen__info::-webkit-scrollbar{
+    display: hidden;
+}
 
 
 
@@ -82,4 +84,10 @@
     height: 100px;
     padding: 15px;
 
+}
+.sButon{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    
 }
