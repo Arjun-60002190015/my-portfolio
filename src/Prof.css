@@ -1,6 +1,6 @@
 .prof{
     
-    height:20vh;
+    height:15vh;
     display: flex;
     flex-direction: column;
     margin: 10px;
@@ -8,6 +8,8 @@
 }
 
 .prof>h2{
+    
+    font-style: normal;
     padding: 10px;
     font-size: 15px;
     font-weight: 650;
@@ -18,7 +20,7 @@
 }
 
 .prof__image{
-    height: 80px;
+    height: 70px;
     
     cursor: pointer;
     transition: transform 0.5s;

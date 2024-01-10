@@ -1,0 +1,14 @@
+.row5{
+    display: flex;
+    color: white;
+    margin: 20px;
+    padding-right: 10px;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    
+}
+
+.row5::-webkit-scrollbar{
+    display: none;
+
+}

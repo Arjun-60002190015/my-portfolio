@@ -11,6 +11,7 @@ function Education() {
     transition={{duration: 0.75, ease:"easeOut"}}
     className='education'>
         <Nav/>
+        
 
         <div className='edu__gradient'>
             

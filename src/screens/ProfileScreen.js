@@ -22,15 +22,21 @@ function ProfileScreen() {
   return (
     <m.div initial={{opacity:0}}
     animate={{opacity:1}}
-    transition={{duration: 0.75 , ease:"easeOut"}}
+    transition={{duration: 0.75 , ease:"linear"}}
     className='profileScreen'>
         <Nav/>
-        <div className='profileScreen__body'>
+        <m.div initial={{opacity:0}}
+        animate={{opacity:1}}
+        transition={{duration: 3 , ease:"easeOut"}} 
+        className='profileScreen__body'>
           <h1> Who's watching?</h1>
           
 
-        </div>
-        <div className='profileScreen__info'>
+        </m.div>
+        <m.div initial={{opacity:0}}
+        animate={{opacity:1}}
+        transition={{duration: 3 , ease:"easeOut"}} 
+        className='profileScreen__info'>
             
             <Prof 
             
@@ -59,7 +65,7 @@ image={'https://i.pinimg.com/564x/b2/a0/29/b2a029a6c2757e9d3a09265e3d07d49d.jpg'
 
             
             
-          </div>
+          </m.div>
           <div className='sButon'>
           <button onClick={(()=> auth.signOut())}
                    className='profileScreen__signOut'>Sign Out</button>

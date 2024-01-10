@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import './App.css';
 import HomeScreen from './screens/HomeScreen';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
@@ -41,6 +41,11 @@ function App() {
     return unsubsribe;
 
   }, [dispatch])
+
+  const[animationPlayed, setAnimationPlayed] = useState(false);
+  const onAnimationEnd = () =>{
+    setAnimationPlayed(true);
+  };
 
 
   return (

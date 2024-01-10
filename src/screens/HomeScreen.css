@@ -1,5 +1,5 @@
 .homeScreen>h2{
-    color: white;
+    color:white;
     margin: 25px;
     font-size: 25px;
     
@@ -7,6 +7,7 @@
 
 .homeScreen{
     width: auto;
+    height: 110%;
     
 }
 

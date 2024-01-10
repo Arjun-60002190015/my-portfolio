@@ -6,14 +6,16 @@ import './Animat.css'
 import { useRef } from 'react'
 
 
-function Animat({f = false}) {
+function Animat() {
     const anima = useRef(LottieRefCurrentProps);
     
-    const history = useNavigate();
+    
   return (
-    <Lottie onAnimationEnd={() => history=("/")}  lottieRef={anima} loop={false} animationData={animationData}
-        f = {true}
+    <div className='loAnima'>
+    <Lottie   lottieRef={anima} loop={true} animationData={animationData}
+        
         />
+        </div>
         
         
 
