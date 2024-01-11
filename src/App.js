@@ -13,6 +13,7 @@ import About from './screens/About';
 import Education from './screens/Education';
 import { AnimatePresence } from 'framer-motion';
 import Animat from './screens/Animat';
+import EdgeTom from './screens/EdgeTom';
 
 
 function App() {
@@ -62,6 +63,8 @@ function App() {
             <Route path='/education' element={<Education/>}/>
             <Route path="/" element={<HomeScreen />} />
             <Route path="/animation" element={<Animat />} />
+            <Route path="/eot" element={<EdgeTom/>} />
+            
 
             
 

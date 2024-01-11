@@ -12,7 +12,13 @@ function Animat() {
     
   return (
     <div className='loAnima'>
-    <Lottie   lottieRef={anima} loop={true} animationData={animationData}
+    <Lottie  style={{
+      alignItems: 'center',
+      justifyContent: 'center',
+      flex: 1,
+      height: 100,
+      width: 100
+    }} lottieRef={anima} loop={true} animationData={animationData}
         
         />
         </div>

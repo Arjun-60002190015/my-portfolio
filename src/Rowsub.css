@@ -22,6 +22,8 @@
 
 .rowsub>h2{
     font-size: 15px;
-    font-weight: 650;
-    color: rgb(240, 240, 239);
+    padding: 2px;
+    font-weight: 65;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(159, 155, 155);
 }

@@ -1,0 +1,22 @@
+.edgetom{
+    position: relative;
+    height: 100%;
+    background: url("https://filmklubb.no/wp/wp-content/uploads/2023/03/edge-of-tomorrow.jpg")  no-repeat;
+    background-size:contain;
+}
+
+.edge__gradient{
+    width: 100%;
+    z-index: 1;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0,4);
+    
+}
+
+.edge__fadeBottom{
+    height: 7.4rem;
+    background-image: linear-gradient(
+        180deg, 
+        transparent, rgba(37, 37, 37, 0.61), #111
+    );
+}
