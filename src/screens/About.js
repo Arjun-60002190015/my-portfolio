@@ -17,10 +17,16 @@ function About() {
       
       <div className='ab__gradient'>
         <div className='about__talk'>
-      <h2>I am a software enthusiast interested in real world problems. I have been programming since 2.5 years now and love to solve problems 
+      <h2>I am a 22 year old software enthusiast interested in real world problems. I have been programming since 2.5 years now and love to solve problems 
         and love to learn new algorithms. </h2>
+      
         
       </div>
+      <button onClick={() => history("/education")} 
+      className='about__button'> 
+      <h1>My Skills</h1>
+
+      </button>
       </div>
       
     </m.div>
