@@ -20,9 +20,8 @@ function LoginScreen() {
         src="https://upload.wikimedia.org/wikipedia/commons/7/7a/Logonetflix.png" alt=""/>
         
         
-        <div className='loginScreen__gradient'
-          
-      />
+        <div className='loginScreen__gradient'/>
+        
       </div>
       <div className='loginScreen__body'>
         {signIn? (
