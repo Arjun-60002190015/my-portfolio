@@ -18,8 +18,7 @@ function LoginScreen() {
         <img
         className='loginScreen__logo' 
         src="https://upload.wikimedia.org/wikipedia/commons/7/7a/Logonetflix.png" alt=""/>
-        <button onClick={() => setSignIn(true)}
-        className='loginScreen__button'>Enter</button>
+        
         
         <div className='loginScreen__gradient'
           

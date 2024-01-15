@@ -17,3 +17,17 @@
         rgba(0, 0, 0, 0.8) 100%  
     );
 }
+
+.about__talk{
+    max-width: 300px;
+    padding-top: 30px;
+    padding: 57px;
+    margin-left: auto;
+    margin-right: auto;
+    background: rgba(0, 0, 0, 0.85);
+}
+
+.about__talk>h2{
+    color: white;
+    font-size: 25px;
+}

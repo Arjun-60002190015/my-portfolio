@@ -51,6 +51,7 @@ function EdgeTom() {
             Captain Cage, who is trapped in 
             a time loop, teams up 
             with a warrior to save the planet.
+            (I love this movie. Give it a try)
                 
                 
             </h1>
@@ -62,11 +63,7 @@ function EdgeTom() {
         </div>
       
     </div>
-    <Row
-        title="Netflix Orignials"
-        fetchUrl={requests.fetchNetflixOriginals}
-        
-        />
+    
 
         
       

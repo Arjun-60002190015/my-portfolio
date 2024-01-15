@@ -46,7 +46,7 @@ function ProfileScreen() {
             image={"https://upload.wikimedia.org/wikipedia/commons/0/0b/Netflix-avatar.png"}
             
             
-            title={"About Me"}/>
+            title={"About"}/>
             
 
           <Prof
