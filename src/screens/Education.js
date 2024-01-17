@@ -15,9 +15,14 @@ function Education() {
 
         <div className='edu__gradient'>
         <div className='edu__talk'>
-      <h2>I am a 22 year old software enthusiast interested in real world problems. I have been programming since 2.5 years now and love to solve problems 
-        and learn new algorithms. </h2>
+      <h2>B.Tech - Dwarkadas J. Sanghvi College of Engineering - Electronics and Telecommunication Engineering
+      </h2>
       
+      <h2 style={{fontStyle:"italic"}}>8.12 GPA</h2>
+      <h2>12th Science - <span style={{fontStyle:"italic"}}>64%</span>
+      </h2>
+      <h2>10th ICSE - <span style={{fontStyle:"italic"}}>81%</span>
+      </h2>
         
       </div>
             

@@ -5,24 +5,34 @@ import {motion as m} from 'framer-motion'
 import Banner from '../Banner'
 import Row from '../Row'
 import requests from '../Requests';
+import videoBg from '../assets/videoBg.mp4';
+
+function EdgeTom() {
+
+    
+  return (
+    <m.div initial={{opacity:0}}
+    animate={{opacity:1}}
+    transition={{duration: 0.75, ease:"easeOut"}}
+    className='edgetom'>
+       <Nav/>
+       <div className='edgeVid'>
+       <video src={videoBg} autoPlay loop muted/>
+       </div>
+
+        
+      
+    
+    </m.div>
+  )
+}
+
+/*
 
 
 function EdgeTom() {
 
-    const containerStyle = {
-        position: 'relative',
-        display: 'inline-block',
-      };
     
-      const overlayStyle = {
-        position: 'absolute',
-        top: 0,
-        left: 0,
-        width: '100%',
-        height: '100%',
-        background: 'linear-gradient(to right, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 100%)',
-        pointerEvents: 'none', // This allows clicks to pass through the overlay to the underlying content
-      };
   return (
     <m.div initial={{opacity:0}}
     animate={{opacity:1}}
@@ -63,12 +73,9 @@ function EdgeTom() {
         </div>
       
     </div>
-    
-
-        
-      
     </m.div>
   )
 }
+*/
 
 export default EdgeTom
