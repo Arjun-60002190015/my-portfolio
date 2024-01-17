@@ -16,8 +16,15 @@ function EdgeTom() {
     transition={{duration: 0.75, ease:"easeOut"}}
     className='edgetom'>
        <Nav/>
+       <div className='overlay'></div>
        <div className='edgeVid'>
        <video src={videoBg} autoPlay loop muted/>
+       <div className='content'>
+        <h1>Edge of Tomorrow</h1>
+        <h2>2014</h2>
+        <p>In short, A time loop. And Tom Cruise. And also Emily Blunt. Take my advice and watch this movie once. There will be no regrets. I love this movie. </p>
+        <button onClick={{}} className='edge__button'>Play</button>
+       </div>
        </div>
 
         
