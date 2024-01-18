@@ -23,8 +23,8 @@ function Nav() {
     }, [])
   return (
     <m.div
-    initial={{opacity:0}}
-    animate={{opacity:1}}
+    initial={{y:-250}}
+    animate={{y:0}}
     transition={{duration: 0.75, ease:"easeOut"}}
      className={`nav ${show && 'nav__black'}`}>
         <div className='nav__content'>

@@ -18,13 +18,17 @@ function EdgeTom() {
        <Nav/>
        <div className='overlay'></div>
        <div className='edgeVid'>
-       <video src={videoBg} autoPlay loop muted/>
-       <div className='content'>
+       <video src={videoBg} autoPlay loop muted width={'300px'} height={'500px'} overflow={'hidden'} />
+       <m.div initial={{opacity:0}}
+    animate={{opacity:1}}
+    transition={{duration: 10.0, ease:"easeOut"}} className='content'>
         <h1>Edge of Tomorrow</h1>
         <h2>2014</h2>
-        <p>In short, A time loop. And Tom Cruise. And also Emily Blunt. Take my advice and watch this movie once. There will be no regrets. I love this movie. </p>
+        <p>In short, a time loop. And Tom Cruise. And also Emily Blunt. 
+          Watch this once.
+           There will be no regrets. And if anybody from Warner Bros is seeing this, we need a SEQUEL. Please. </p>
         <button onClick={{}} className='edge__button'>Play</button>
-       </div>
+       </m.div>
        </div>
 
         
