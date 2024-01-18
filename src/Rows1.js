@@ -8,7 +8,7 @@ function Rows1() {
     <m.div
     initial={{x:-700}}
     animate={{x:15}} 
-    transition={{delay:1.15, duration: 0.74, ease:"easeOut"}}
+    transition={{delay:1.15, duration: 0.74, ease:"easeOut", type:"spring", stiffness:100}}
     className='rows1'>
         <Rowsub
             link={"https://github.com/Arjun-60002190015/Parkinson-s-early-detection-model"}

@@ -19,15 +19,23 @@ function EdgeTom() {
        <div className='overlay'></div>
        <div className='edgeVid'>
        <video src={videoBg} autoPlay loop muted width={'300px'} height={'500px'} overflow={'hidden'} />
-       <m.div initial={{opacity:0}}
+       <m.div  className='content'>
+        <m.h1 initial={{opacity:0}}
     animate={{opacity:1}}
-    transition={{duration: 10.0, ease:"easeOut"}} className='content'>
-        <h1>Edge of Tomorrow</h1>
-        <h2>2014</h2>
-        <p>In short, a time loop. And Tom Cruise. And also Emily Blunt. 
+    transition={{delay:2 ,duration: 2, ease:"easeOut"}} 
+    >Edge of Tomorrow</m.h1>
+        <m.h2 initial={{opacity:0}}
+    animate={{opacity:1}}
+    transition={{delay:4 ,duration: 2, ease:"easeOut"}} >2014</m.h2>
+        <m.p initial={{opacity:0}}
+    animate={{opacity:1}}
+    transition={{delay:6 ,duration: 2, ease:"easeOut"}} >In short, a time loop. And Tom Cruise. And also Emily Blunt. 
           Watch this once.
-           There will be no regrets. And if anybody from Warner Bros is seeing this, we need a SEQUEL. Please. </p>
-        <button onClick={{}} className='edge__button'>Play</button>
+           There will be no regrets. And if anybody from Warner Bros is seeing this, we need a SEQUEL. Please. </m.p>
+        <m.button initial={{opacity:0}}
+    animate={{opacity:1}}
+    transition={{delay:8 ,duration: 2, ease:"easeOut"}} 
+        onClick={{}} className='edge__button'>Play</m.button>
        </m.div>
        </div>
 

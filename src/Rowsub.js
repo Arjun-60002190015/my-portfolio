@@ -11,7 +11,7 @@ function Rowsub({image, title, link}){
       textShadow: "8px 8px 8px rgb(255 255 255)",
 
        
-       backgroundColor: "rgb(0, 13, 0)"
+       backgroundColor: "rgb(0, 3, 0)"
     }}
     className='rowsub'>
       <Link to={link}>

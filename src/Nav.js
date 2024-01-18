@@ -31,7 +31,7 @@ function Nav() {
         <m.div
     initial={{x:-250}}
     animate={{x:-10}}
-    transition={{duration: 0.75, ease:"easeOut"}}
+    transition={{duration: 0.75, ease:"easeOut", type:"spring"}}
     className='an_image'>
          <img 
         onClick={()=> history("/")}
@@ -40,9 +40,9 @@ function Nav() {
         />
         </m.div>
         <m.img 
-        initial={{y:-250}}
-        animate={{y:0}}
-        transition={{duration: 0.75, ease:"easeOut"}}
+        initial={{opacity:-2}}
+        animate={{opacity:1}}
+        transition={{duration: 2, ease:"easeOut"}}
             
         onClick={()=> history("/profile")}
         className='nav__avatar'
