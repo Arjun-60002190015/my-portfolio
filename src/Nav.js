@@ -39,7 +39,10 @@ function Nav() {
         src="https://upload.wikimedia.org/wikipedia/commons/7/7a/Logonetflix.png" alt=""
         />
         </m.div>
-        <img 
+        <m.img 
+        initial={{y:-250}}
+        animate={{y:0}}
+        transition={{duration: 0.75, ease:"easeOut"}}
             
         onClick={()=> history("/profile")}
         className='nav__avatar'

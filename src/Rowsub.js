@@ -1,11 +1,19 @@
 import React from 'react'
 import './Rowsub.css'
 import { Link } from 'react-router-dom'
+import {motion as m} from 'framer-motion'
 
 function Rowsub({image, title, link}){ 
   
   return (
-    <div className='rowsub'>
+    <m.div
+    whileHover={{
+      textShadow: "8px 8px 8px rgb(255 255 255)",
+
+       
+       backgroundColor: "rgb(0, 13, 0)"
+    }}
+    className='rowsub'>
       <Link to={link}>
         <img className='rowsub__image'
       
@@ -14,7 +22,7 @@ function Rowsub({image, title, link}){
       </Link>
       <h2>{title}</h2>
 
-    </div>
+    </m.div>
   )
 }
 /*

@@ -25,9 +25,9 @@ function ProfileScreen() {
     transition={{duration: 0.75 , ease:"linear"}}
     className='profileScreen'>
         <Nav/>
-        <m.div initial={{opacity:0}}
-        animate={{opacity:1}}
-        transition={{duration: 3 , ease:"easeOut"}} 
+        <m.div initial={{y:-250}}
+        animate={{y:0}}
+        transition={{duration: 0.75 , ease:"easeOut"}} 
         className='profileScreen__body'>
           <h1> Who's watching?</h1>
           
@@ -67,8 +67,12 @@ image={'https://i.pinimg.com/564x/b2/a0/29/b2a029a6c2757e9d3a09265e3d07d49d.jpg'
             
           </m.div>
           <div className='sButon'>
-          <button onClick={(()=> auth.signOut())}
-                   className='profileScreen__signOut'>Sign Out</button>
+          <m.button whileHover={{
+            textShadow: "0px 0px 8px rgb(255 255 255)"
+            , boxShadow: "0px 0px 8px rgb(255, 255, 255)" 
+          }} 
+          onClick={(()=> auth.signOut())}
+                   className='profileScreen__signOut'>Sign Out</m.button>
 
 <button onClick={(()=> history("/animation"))}
                    className='profileScreen__signOut'>Animate</button>
