@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import "./Banner.css";
 import axios from './axios';
 import requests from './Requests';
+import {motion as m} from 'framer-motion';
 
 function Banner() {
     const[movie, setMovie] = useState([]);
@@ -35,7 +36,11 @@ function Banner() {
         backgroundImage: `url("https://image.tmdb.org/t/p/original/${movie?.backdrop_path}")`, 
         
     }}>
-        <div className='banner__contents'>
+        <m.div
+    initial={ {opacity:-1}}
+    animate={{opacity:1}} 
+    transition={{delay: 0.75 , duration: 3, ease:"easeOut"}}
+    className='banner__contents'>
             <h1 className='banner__title'>
                 
                 Arjun Pathak
@@ -49,7 +54,7 @@ function Banner() {
                 
                 
             </h1>
-        </div>
+        </m.div>
 
         <div className='banner--fadeBottom'>
             

@@ -1,10 +1,14 @@
 import React from 'react'
 import './Rows2.css'
 import Rowsub from './Rowsub'
+import {motion as m} from 'framer-motion';
 
 function Rows2() {
     return (
-        <div className='rows2'>
+        <m.div
+    initial={{x:-700}}
+    animate={{x:15}} 
+    transition={{delay:1.15, duration: 0.74, ease:"easeOut"}} className='rows2'>
           
             
             <Rowsub
@@ -28,7 +32,7 @@ function Rows2() {
     
             
           
-        </div>
+        </m.div>
     )
 }
 

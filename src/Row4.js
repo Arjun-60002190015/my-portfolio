@@ -1,11 +1,15 @@
 import React from 'react'
 import './Row4.css'
 import Rowsub from './Rowsub'
+import {motion as m} from 'framer-motion';
 
 function Rows4(link, image, title) {
  
     return (
-      <div className='rows4'>
+      <m.div
+    initial={{x:-700}}
+    animate={{x:15}} 
+    transition={{delay:1.15, duration: 0.74, ease:"easeOut"}} className='rows4'>
         <Rowsub
            link={"https://github.com/Arjun-60002190015/Detect_cycle_in_a_directed_graph"}
            image={"https://t4.ftcdn.net/jpg/03/66/06/83/360_F_366068390_OZvv8ESGxZpe6XVHRkex0UXiC7iCbCMq.jpg"}
@@ -31,7 +35,7 @@ function Rows4(link, image, title) {
    
           
         
-      </div>
+      </m.div>
     )
    }
 

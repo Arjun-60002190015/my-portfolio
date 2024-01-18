@@ -1,10 +1,15 @@
 import React from 'react'
 import './Rows1.css'
 import Rowsub from './Rowsub'
+import {motion as m} from 'framer-motion';
 
 function Rows1() {
   return (
-    <div className='rows1'>
+    <m.div
+    initial={{x:-700}}
+    animate={{x:15}} 
+    transition={{delay:1.15, duration: 0.74, ease:"easeOut"}}
+    className='rows1'>
         <Rowsub
             link={"https://github.com/Arjun-60002190015/Parkinson-s-early-detection-model"}
             image={"https://info.primarycare.hms.harvard.edu/hubfs/6.23.jpg"}
@@ -25,7 +30,7 @@ function Rows1() {
          
 
       
-    </div>
+    </m.div>
   )
 }
 

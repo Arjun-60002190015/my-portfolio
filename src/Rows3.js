@@ -2,12 +2,16 @@ import React from 'react'
 import Rowsub from './Rowsub'
 import { Link } from 'react-router-dom'
 import './Rows3.css'
+import {motion as m} from 'framer-motion';
 
 
 function Rows3(link, image, title) {
  
  return (
-   <div className='rows3'>
+  <m.div
+  initial={{x:-700}}
+  animate={{x:15}} 
+  transition={{delay:1.15, duration: 0.74, ease:"easeOut"}} className='rows3'>
      
 
      <Rowsub
@@ -36,7 +40,7 @@ function Rows3(link, image, title) {
 
        
      
-   </div>
+   </m.div>
  )
 }
 

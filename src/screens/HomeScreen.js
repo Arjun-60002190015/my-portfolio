@@ -36,17 +36,38 @@ function HomeScreen() {
       
       <Nav/>
       <Banner/>
+      <div className='setup'>
+      <m.h2 
       
-      <h2>Top Picks (Projects)</h2>
+      initial={{opacity:-1}}
+      animate={{opacity:1}} 
+      transition={{delay:1.15, duration: 0.74, ease:"easeOut"}}>Top Picks (Projects)</m.h2>
       <Rows1/>
-      <h2>Because you have watched The Social Network (2010)</h2>
+      <m.h2 
+      
+      initial={{opacity:-1}}
+      animate={{opacity:1}} 
+      transition={{delay:1.15, duration: 0.74, ease:"easeOut"}}>Because you have watched The Social Network (2010)</m.h2>
       <Rows2/>
-      <h2> Some more Projects (app clones)</h2>
+      <m.h2 
+      
+      initial={{opacity:-1}}
+      animate={{opacity:1}} 
+      transition={{delay:1.15, duration: 0.74, ease:"easeOut"}}> Some more Projects (app clones)</m.h2>
       <Rows3/>
-      <h2>Some exciting Algorithms</h2>
+      <m.h2 
+      
+      initial={{opacity:-1}}
+      animate={{opacity:1}} 
+      transition={{delay:1.15, duration: 0.74, ease:"easeOut"}}>Some exciting Algorithms</m.h2>
       <Row4/>
-      <h2>Also watch</h2>
+      <m.h2 
+      
+      initial={{opacity:-1}}
+      animate={{opacity:1}} 
+      transition={{delay:1.15, duration: 0.74, ease:"easeOut"}}>Also watch</m.h2>
       <Row5/>
+      </div>
       </m.div>
       
     

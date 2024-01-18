@@ -23,17 +23,24 @@ function Nav() {
     }, [])
   return (
     <m.div
-    initial={{y:-250}}
-    animate={{y:0}}
+    initial={{opacity:0}}
+    animate={{opacity:1}}
     transition={{duration: 0.75, ease:"easeOut"}}
      className={`nav ${show && 'nav__black'}`}>
         <div className='nav__content'>
-        <img 
+        <m.div
+    initial={{x:-250}}
+    animate={{x:-10}}
+    transition={{duration: 0.75, ease:"easeOut"}}
+    className='an_image'>
+         <img 
         onClick={()=> history("/")}
         className='nav__logo'
         src="https://upload.wikimedia.org/wikipedia/commons/7/7a/Logonetflix.png" alt=""
         />
+        </m.div>
         <img 
+            
         onClick={()=> history("/profile")}
         className='nav__avatar'
         src='https://upload.wikimedia.org/wikipedia/commons/0/0b/Netflix-avatar.png' alt=''
