@@ -3,9 +3,74 @@ import './LoginScreen.css'
 import SignupScreen from './SignupScreen';
 import HomeScreen from './HomeScreen';
 import { useNavigate } from 'react-router-dom';
-import {motion as m} from 'framer-motion'
+import {motion as m} from 'framer-motion';
 
-function LoginScreen() {
+
+function LoginScreen({onLoginButtonClick}) {
+  const[signIn, setSignIn] = useState(false);
+  const history = useNavigate();
+
+  return (
+    <m.div initial={{opacity:0}}
+    animate={{opacity:1}}
+    transition={{duration: 0.75 , ease:"easeOut"}}
+     className='loginScreen'>
+      <div className='loginScreen__background'>
+        <img
+        className='loginScreen__logo' 
+        src="https://upload.wikimedia.org/wikipedia/commons/7/7a/Logonetflix.png" alt=""/>
+        
+        
+        <m.div
+        initial={{opacity:-2}}
+        animate={{opacity:1}}
+        transition={{delay:2, duration: 2 , ease:"easeOut"}}
+        className='loginScreen__gradient'/>
+        
+      </div>
+      <div className='loginScreen__body'>
+        {signIn? (
+          <SignupScreen />
+          ): (
+            <>
+            <m.h1
+            initial={{opacity:-2}}
+            animate={{opacity:1}}
+            transition={{delay:4, duration: 2 , ease:"easeOut"}}
+            >Hey There. This is a portfolio webapp. Inspired from Netflix.</m.h1>
+             <m.div 
+             initial={{opacity:-2}}
+             animate={{opacity:1}}
+             transition={{delay:6, duration: 2 , ease:"easeOut"}}
+             className='loginScreen__input'>
+              <form>
+                <input type='email'
+                placeholder='Email Address'
+                />
+                 <button onClick={onLoginButtonClick}
+                className='loginScreen__getStarted'> Get Started</button>
+              </form>
+            </m.div>
+          </>
+
+        )}
+        
+
+
+
+      </div>
+
+      
+
+      
+    </m.div>
+  )
+
+}
+
+/*
+
+function LoginScreen({onLoginButtonClick}) {
   const[signIn, setSignIn] = useState(false);
   const history = useNavigate();
 
@@ -36,6 +101,11 @@ function LoginScreen() {
                 <input type='email'
                 placeholder='Email Address'
                 />
+                <div>
+      
+      <button onClick={onLoginButtonClick}>Login</button>
+    </div>
+
                 <button onClick={() => setSignIn(true)} 
                 className='loginScreen__getStarted'> Get Started</button>
               </form>
@@ -55,5 +125,6 @@ function LoginScreen() {
     </m.div>
   )
 }
+*/
 
 export default LoginScreen

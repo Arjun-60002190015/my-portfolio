@@ -30,7 +30,7 @@ function HomeScreen() {
     <m.div 
     initial={{opacity:0}}
     animate={{opacity:1}}
-    transition={{duration: 1.5, ease:"easeOut"}}
+    transition={{duration: 0.75, ease:"easeOut"}}
     className="homeScreen">
        
       

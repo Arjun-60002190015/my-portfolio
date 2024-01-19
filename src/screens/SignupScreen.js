@@ -6,7 +6,7 @@ import {motion as m} from 'framer-motion'
 
 
 function SignupScreen() {
-
+    const onLoginButtonClick = null
     const emailRef = useRef(null);
     const passwordRef = useRef(null);
     const history = useNavigate()

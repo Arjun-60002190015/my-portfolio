@@ -17,7 +17,7 @@ import EdgeTom from './screens/EdgeTom';
 
 
 function App() {
-  
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
   const user = 
     useSelector(selectUser);
   ;
@@ -48,14 +48,18 @@ function App() {
     setAnimationPlayed(true);
   };
 
+  const handleLoginButtonClick = () => {
+    setIsLoggedIn(true);
+  };
+
 
   return (
     <div className="app">
       <AnimatePresence>
       
       <BrowserRouter>
-      {!user ? (
-            <LoginScreen/>
+      {!isLoggedIn ? (
+            <LoginScreen onLoginButtonClick={handleLoginButtonClick}/>
           ):( 
         <Routes>
             <Route path='/profile' element={<ProfileScreen/>}/>
