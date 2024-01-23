@@ -25,8 +25,10 @@ return (
       <m.p initial={{opacity:0}}
   animate={{opacity:1}}
   transition={{delay:3 ,duration: 2, ease:"easeOut"}} >
-    So in this build, I made a clone of spotify where user after logging in can navigate from their own playlist made in their real spotify account. I gave a player to listen into the music.
-    
+    So in this build, I made a clone of spotify where user after logging in can navigate from their own playlist made in their real spotify account. 
+    I gave a player to listen into the music.
+    And no, the video in the background is not what I made.
+
       </m.p>
     <Link to={"https://github.com/Arjun-60002190015/spotify-app"}>
       <m.button   initial={{opacity:0}}
