@@ -41,7 +41,7 @@
     width: 40px;
     cursor: pointer;
     transition: 0.3s;
-
+    border-radius: 25%;
 }
 
 .nav__avatar:hover{

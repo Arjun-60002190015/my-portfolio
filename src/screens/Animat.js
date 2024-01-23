@@ -14,7 +14,7 @@ function Animat(animationchecking) {
     <div className='loAnima'>
     <Lottie onAnimationEnd={animationchecking} style={{
       
-    }} lottieRef={anima} loop={true} animationData={animationData}
+    }} lottieRef={anima} loop={false} animationData={animationData}
 
         
         />

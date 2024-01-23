@@ -66,18 +66,20 @@ function HomeScreen() {
       animate={{opacity:1}} 
       transition={{delay:1.15, duration: 2, ease:"easeOut"}}>Top Picks (Projects)</m.h2>
       <Rows1/>
-      <m.h2 
-      
-      initial={{opacity:-1}}
-      animate={{opacity:1}} 
-      transition={{delay:1.15, duration: 2, ease:"easeOut"}}>Because you have watched The Social Network (2010)</m.h2>
-      <Rows2/>
+
       <m.h2 
       
       initial={{opacity:-1}}
       animate={{opacity:1}} 
       transition={{delay:1.15, duration: 2, ease:"easeOut"}}> Some more Projects (app clones)</m.h2>
       <Rows3/>
+      <m.h2 
+      
+      initial={{opacity:-1}}
+      animate={{opacity:1}} 
+      transition={{delay:1.15, duration: 2, ease:"easeOut"}}>Because you have watched The Social Network (2010)</m.h2>
+      <Rows2/>
+      
       <m.h2 
       
       initial={{opacity:-1}}

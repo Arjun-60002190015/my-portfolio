@@ -21,7 +21,7 @@
 
 .prof__image{
     height: 70px;
-    
+    border-radius: 25%;
     cursor: pointer;
     transition: transform 0.5s;
     

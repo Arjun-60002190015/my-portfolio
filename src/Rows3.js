@@ -20,11 +20,7 @@ function Rows3(link, image, title) {
             title={"Spotify"}
             />
  
-      <Rowsub
-              link={"/igreels"}
-              image={"https://i0.wp.com/www.alphr.com/wp-content/uploads/2022/06/How-to-View-Instagram-Reels-on-Desktop.jpg?fit=1200%2C553&ssl=1"}
-              title={"IG-Reels"}
-          />
+      
         
         <Rowsub
               link={"/amazon"}
@@ -35,6 +31,11 @@ function Rows3(link, image, title) {
               link={"/netflix"}
               image={"https://cdn.vox-cdn.com/thumbor/pNxD2NFOCjbljnMPUSGdkFWeDjI=/0x0:3151x2048/1400x788/filters:focal(1575x1024:1576x1025)/cdn.vox-cdn.com/uploads/chorus_asset/file/15844974/netflixlogo.0.0.1466448626.png"}
               title={"Netflix"}
+          />
+          <Rowsub
+              link={"/igreels"}
+              image={"https://i0.wp.com/www.alphr.com/wp-content/uploads/2022/06/How-to-View-Instagram-Reels-on-Desktop.jpg?fit=1200%2C553&ssl=1"}
+              title={"IG-Reels"}
           />
           
  
