@@ -37,16 +37,19 @@ function LoginScreen({onLoginButtonClick}) {
             initial={{opacity:-2}}
             animate={{opacity:1}}
             transition={{delay:4, duration: 2 , ease:"easeOut"}}
-            >Hey There. This is a portfolio webapp. Inspired from Netflix.</m.h1>
+            >Hey There. This is a portfolio webapp. </m.h1>
+            <m.h1
+            initial={{opacity:-2}}
+            animate={{opacity:1}}
+            transition={{delay:6, duration: 2 , ease:"easeOut"}}
+            >Inspired from Netflix.</m.h1>
              <m.div 
              initial={{opacity:-2}}
              animate={{opacity:1}}
-             transition={{delay:6, duration: 2 , ease:"easeOut"}}
+             transition={{delay:8, duration: 2 , ease:"easeOut"}}
              className='loginScreen__input'>
               <form>
-                <input type='email'
-                placeholder='Email Address'
-                />
+                
                  <button onClick={onLoginButtonClick}
                 className='loginScreen__getStarted'> Get Started</button>
               </form>

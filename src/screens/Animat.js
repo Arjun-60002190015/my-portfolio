@@ -6,17 +6,19 @@ import './Animat.css'
 import { useRef } from 'react'
 
 
-function Animat() {
+function Animat(animationchecking) {
     const anima = useRef(LottieRefCurrentProps);
     
     
   return (
     <div className='loAnima'>
-    <Lottie  style={{
+    <Lottie onAnimationEnd={animationchecking} style={{
       
     }} lottieRef={anima} loop={true} animationData={animationData}
+
         
         />
+        
         </div>
         
         

@@ -11,7 +11,7 @@ import About from './About';
 import {motion as m} from 'framer-motion'
 
 
-function ProfileScreen() {
+function ProfileScreen(onLoginButtonClick) {
   
   const history = useNavigate();
   
@@ -25,8 +25,8 @@ function ProfileScreen() {
     transition={{duration: 0.75 , ease:"linear"}}
     className='profileScreen'>
         <Nav/>
-        <m.div initial={{y:-250}}
-        animate={{y:12}}
+        <m.div initial={{opacity:0}}
+        animate={{opacity:1}}
         transition={{duration: 0.75 , ease:"easeOut"}} 
         className='profileScreen__body'>
           <h1> Who's watching?</h1>

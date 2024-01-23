@@ -28,6 +28,11 @@ function Rows2() {
                   image={"https://sr-marketplace-prod.s3.amazonaws.com/wp-content/uploads/2015/08/HackerRank1.png"}
                   title={"HackerRank"}
               />
+              <Rowsub
+                  link={"https://media.licdn.com/dms/image/C5612AQHvzL-_J1rRWg/article-cover_image-shrink_600_2000/0/1614895141102?e=2147483647&v=beta&t=61j64lYBEW2Lu2J0FC6oqxfHhlPcXdgRtB--3klMdqE"}
+                  image={"https://www.shutterstock.com/image-vector/linkedin-black-square-blue-colour-260nw-2320554949.jpg"}
+                  title={"LinkedIn"}
+              />
               
     
             

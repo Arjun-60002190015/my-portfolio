@@ -3,6 +3,38 @@ import './Rows1.css'
 import Rowsub from './Rowsub'
 import {motion as m} from 'framer-motion';
 
+
+function Rows1() {
+  return (
+    <m.div
+    initial={{x:-700}}
+    animate={{x:15}} 
+    transition={{delay:1.15, duration: 0.74, ease:"easeOut", type:"spring", stiffness:100}}
+    className='rows1'>
+        <Rowsub
+            link={"/pdm"}
+            image={"https://info.primarycare.hms.harvard.edu/hubfs/6.23.jpg"}
+            title={"Parkinson's Detection Model"}
+            />
+
+      <Rowsub
+              link={"/hsa"}
+              image={"https://itbrief.com.au/uploads/story/2023/11/14/preview_img-kBYEZKDZ6mTLWr4vhOVJp1PQ.webp"}
+              title={"Home Security and Automation"}
+          />
+        
+        <Rowsub
+              link={"/bds"}
+              image={"https://blog-c7ff.kxcdn.com/blog/wp-content/uploads/2019/11/Banner-Blog-1A-1.jpg"}
+              title={"Basic data structures"}
+          />
+         
+
+      
+    </m.div>
+  )
+}
+/*
 function Rows1() {
   return (
     <m.div
@@ -33,5 +65,5 @@ function Rows1() {
     </m.div>
   )
 }
-
+*/
 export default Rows1

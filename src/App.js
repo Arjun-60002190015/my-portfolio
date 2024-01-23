@@ -14,9 +14,17 @@ import Education from './screens/Education';
 import { AnimatePresence } from 'framer-motion';
 import Animat from './screens/Animat';
 import EdgeTom from './screens/EdgeTom';
-
+import { useLocation } from 'react-router-dom';
+import Parkinsons from './screens/Parkinsons';
+import Security from './screens/Security';
+import DataStructures from './screens/DataStructures';
+import Netflix from './screens/Netflix';
+import Amazon from './screens/Amazon';
+import IgReels from './screens/IgReels';
+import Spotify from './screens/Spotify';
 
 function App() {
+  
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const user = 
     useSelector(selectUser);
@@ -43,10 +51,7 @@ function App() {
 
   }, [dispatch])
 
-  const[animationPlayed, setAnimationPlayed] = useState(false);
-  const onAnimationEnd = () =>{
-    setAnimationPlayed(true);
-  };
+  
 
   const handleLoginButtonClick = () => {
     setIsLoggedIn(true);
@@ -57,17 +62,24 @@ function App() {
     <div className="app">
       <AnimatePresence>
       
-      <BrowserRouter>
+      <BrowserRouter >
       {!isLoggedIn ? (
             <LoginScreen onLoginButtonClick={handleLoginButtonClick}/>
           ):( 
-        <Routes>
+        <Routes >
             <Route path='/profile' element={<ProfileScreen/>}/>
             <Route path='/about' element={<About/>}/>
             <Route path='/education' element={<Education/>}/>
             <Route path="/" element={<HomeScreen />} />
             <Route path="/animation" element={<Animat />} />
             <Route path="/eot" element={<EdgeTom/>} />
+            <Route path="/pdm" element={<Parkinsons/>} />
+            <Route path="/hsa" element={<Security/>} />
+            <Route path="/bds" element={<DataStructures/>} />
+            <Route path="/spotify" element={<Spotify/>} />
+            <Route path="/igreels" element={<IgReels/>} />
+            <Route path="/netflix" element={<Netflix/>} />
+            <Route path="/amazon" element={<Amazon/>} />
             
 
             
