@@ -95,9 +95,11 @@
     background-color: #e50914;
     font-weight: 600;
     cursor:pointer;
+}
 
-
-
-
-
+.loginScreen__getStarted:hover{
+    color: #e50914;
+    background-color: #e6e6e6;
+    transition: 0.5s;
+    
 }

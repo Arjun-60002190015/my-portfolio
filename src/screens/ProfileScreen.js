@@ -33,9 +33,9 @@ function ProfileScreen(onLoginButtonClick) {
           
 
         </m.div>
-        <m.div initial={{opacity:0}}
-        animate={{opacity:1}}
-        transition={{duration: 3 , ease:"easeOut"}} 
+        <m.div initial={{x:-2500}}
+        animate={{x:0}}
+        transition={{delay:0.75, duration: 1 , ease:"easeOut" }} 
         className='profileScreen__info'>
             
             <Prof 
@@ -72,7 +72,7 @@ image={'https://i.pinimg.com/564x/b2/a0/29/b2a029a6c2757e9d3a09265e3d07d49d.jpg'
             , boxShadow: "0px 0px 8px rgb(255, 255, 255)" 
           }} 
           onClick={(()=> history(""))}
-                   className='profileScreen__signOut'>Sign Out</m.button>
+                   className='profileScreen__signOut'>SIGN OUT</m.button>
 
 <button onClick={(()=> history("/animation"))}
                    className='profileScreen__signOut'>Animate</button>

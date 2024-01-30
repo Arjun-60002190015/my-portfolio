@@ -31,7 +31,7 @@ function Nav() {
         <m.div
     initial={{x:-250}}
     animate={{x:-10}}
-    transition={{duration: 0.75, ease:"easeOut", type:"spring"}}
+    transition={{duration: 2, ease:"easeOut", type:"spring"}}
     className='an_image'>
          <img 
         onClick={()=> history("/")}

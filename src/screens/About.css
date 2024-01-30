@@ -64,9 +64,9 @@
 }
 
 .about__button:hover{
-    color: #000000;
+    color: #e50914;
     background-color: #e6e6e6;
-    transition: 1.2s;
+    transition: 0.5s;
     
 }
 

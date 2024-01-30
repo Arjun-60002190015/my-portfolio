@@ -50,10 +50,15 @@ function Banner() {
                 <button className='banner__button'>22</button>
 
             </div>
-            <h1 className='banner__description'>
+            <m.h1 
+            initial={ {opacity:-1}}
+            animate={{opacity:1}} 
+            transition={{delay: 3 , duration: 3, ease:"easeOut"}}
+            className='banner__description'>
+                Projects and links are below.
+                To know more about me, click on the profile button.
                 
-                
-            </h1>
+            </m.h1>
         </m.div>
 
         <div className='banner--fadeBottom'>

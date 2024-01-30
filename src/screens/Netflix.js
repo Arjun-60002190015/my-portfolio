@@ -29,7 +29,7 @@ return (
     This is the most in-depth project I have made and <Link to={"https://my-repo-sigma-amber.vercel.app/"} className='netflix__link'>hosted</Link>.
     I wanted to add a paywall but then 
     realized that to even use its API I have to pay. 
-    Used some third party APIs to get the background image shuffling and also the various genres.
+    Used a third party APIs to get the background image shuffling and also the various genres.
     
 
 

@@ -23,7 +23,7 @@ import Row5 from '../Row5';
 
 
 function HomeScreen() { 
-  const [isAnimDone, setIsAnimDone] = useState(false);
+  
   const containerVariants = {
     hidden:{
       opacity:0, 
@@ -41,14 +41,11 @@ function HomeScreen() {
 
   }
 
-  const checkForAnimation = () => {
-    setIsAnimDone(true);
-  };
+  
 
   return ( 
-    <div className='homeSSS'>
-    { isAnimDone? (<Animat animationchecking={checkForAnimation}/>
-    ):(
+    
+    
       <m.div 
     variants={containerVariants}
     initial='hidden'
@@ -101,9 +98,9 @@ function HomeScreen() {
       
       
   )}
-  </div>
-    )
-    }
+  
+    
+    
   
   
 
