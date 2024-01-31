@@ -22,6 +22,7 @@
 
 .banner__buttons{
     padding-top: 5px;
+    
 }
 
 
@@ -53,8 +54,9 @@
     border-radius: 0.2vw;
     padding-left: 2 rem;
     padding-right: 2 rem;
-    margin-right: 1 rem;
+    margin-right: 2 rem;
     padding-top: 0.55rem;
+    
     background-color: rgba(42, 41, 41, 0.5);
     padding-bottom: 0.5rem;
 
