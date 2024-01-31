@@ -31,6 +31,7 @@ function Banner() {
         backgroundPosition: "center center",
         backgroundSize: "cover",
         objectFit:"contain",
+        backgroundColor: "rgba(51, 51, 51, 0.5)",
         // Black background: https://wallpapercave.com/wp/wp3321103.jpg
         
         backgroundImage: `url("https://image.tmdb.org/t/p/original/${movie?.backdrop_path}")`, 

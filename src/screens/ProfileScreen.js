@@ -66,17 +66,7 @@ image={'https://i.pinimg.com/564x/b2/a0/29/b2a029a6c2757e9d3a09265e3d07d49d.jpg'
             
             
           </m.div>
-          <div className='sButon'>
-          <m.button whileHover={{
-            textShadow: "0px 0px 8px rgb(255 255 255)"
-            , boxShadow: "0px 0px 8px rgb(255, 255, 255)" 
-          }} 
-          onClick={(()=> history(""))}
-                   className='profileScreen__signOut'>SIGN OUT</m.button>
-
-<button onClick={(()=> history("/animation"))}
-                   className='profileScreen__signOut'>Animate</button>
-      </div>
+          
     </m.div>
   )
 }
@@ -102,8 +92,17 @@ function ProfileScreen() {
                   <h3>Plans</h3>
                   
                 </div>
-             </div>
-          </div>
+             <div className='sButon'>
+          <m.button whileHover={{
+            textShadow: "0px 0px 8px rgb(255 255 255)"
+            , boxShadow: "0px 0px 8px rgb(255, 255, 255)" 
+          }} 
+          onClick={(()=> history(""))}
+                   className='profileScreen__signOut'>SIGN OUT</m.button>
+
+<button onClick={(()=> history("/animation"))}
+                   className='profileScreen__signOut'>Animate</button>
+      </div>
 
         </div>
       
