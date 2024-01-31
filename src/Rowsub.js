@@ -1,11 +1,12 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import './Rowsub.css'
 import { Link } from 'react-router-dom'
-import {motion as m, useScroll, useTransform, useViewportScroll} from 'framer-motion'
+import {motion as m, transform, useInView, useScroll, useTransform, useViewportScroll} from 'framer-motion'
 
 function Rowsub({image, title, link}){ 
-  const {scrollYProgress} = useScroll()
-  const scale = useTransform(scrollYProgress, [0, 1], [0.2, 2]);
+  const ref = useRef(null);
+  const isInView = useInView(ref, {once:true});
+  
   
   return (
     <m.div
@@ -15,17 +16,22 @@ function Rowsub({image, title, link}){
        
        backgroundColor: "rgb(0, 3, 0)"
     }}
-    style={{scale}}
+    initial={{opacity:-1}}
+    whileInView={{opacity:1}}
 
     className='rowsub'>
       <Link to={link}>
-        <m.div style={{scaleY:scrollYProgress}}/>
+        
         <img className='rowsub__image'
       
           src={image}
       />
       </Link>
-      <h2>{title}</h2>
+      <h2 ref={ref}><span style={{
+        transform: isInView? "none": "translateX(-200px", 
+        opacity: isInView? 1:0,
+        transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"
+      }}></span>{title}</h2>
 
     </m.div>
   )
