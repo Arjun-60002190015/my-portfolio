@@ -5,6 +5,20 @@ import { useNavigate } from 'react-router-dom';
 import {motion as m} from 'framer-motion'
 
 function Nav() {
+
+    const pathVar = {
+        hidden:{
+            opacity:0, 
+            pathLength: 0
+        }, 
+        visible:{
+            opacity:1, 
+            pathLength:1, 
+            transition: {
+                duration:2, ease: "easeInOut"
+            }
+        }
+    }
     const[show, handleShow] = useState(false);
     const history = useNavigate();
 
@@ -29,12 +43,16 @@ function Nav() {
      className={`nav ${show && 'nav__black'}`}>
         <div className='nav__content'>
         <m.div
+        variants={pathVar}
     initial={{x:-250}}
     animate={{x:-10}}
     transition={{duration: 2, ease:"easeOut", type:"spring"}}
     className='an_image'>
-         <img 
-        onClick={()=> history("/")}
+         <m.img 
+         drag
+         dragConstraints={{left:0, top:0, right:0, bottom:0}}
+         dragElastic={1}
+         onClick={()=> history("/")}
         className='nav__logo'
         src="https://upload.wikimedia.org/wikipedia/commons/7/7a/Logonetflix.png" alt=""
         />
