@@ -1,9 +1,11 @@
 import React from 'react'
 import './Rowsub.css'
 import { Link } from 'react-router-dom'
-import {motion as m} from 'framer-motion'
+import {motion as m, useScroll, useTransform, useViewportScroll} from 'framer-motion'
 
 function Rowsub({image, title, link}){ 
+  const {scrollYProgress} = useScroll()
+  const scale = useTransform(scrollYProgress, [0, 1], [0.2, 2]);
   
   return (
     <m.div
@@ -13,8 +15,11 @@ function Rowsub({image, title, link}){
        
        backgroundColor: "rgb(0, 3, 0)"
     }}
+    style={{scale}}
+
     className='rowsub'>
       <Link to={link}>
+        <m.div style={{scaleY:scrollYProgress}}/>
         <img className='rowsub__image'
       
           src={image}

@@ -45,7 +45,7 @@ function Nav() {
         <m.div
         variants={pathVar}
     initial={{x:-250}}
-    animate={{x:-10}}
+    animate={{x:-15}}
     transition={{duration: 2, ease:"easeOut", type:"spring"}}
     className='an_image'>
          <m.img 
