@@ -18,7 +18,7 @@ function EdgeTom() {
        <Nav/>
        <div className='overlay'></div>
        <div className='edgeVid'>
-       <video src={videoBg} autoPlay loop muted width={'300px'} height={'500px'} overflow={'hidden'} />
+       <video playsInline src={videoBg} autoPlay loop muted width={'300px'} height={'500px'} overflow={'hidden'} />
        <m.div  className='content'>
         <m.h1 initial={{opacity:0}}
     animate={{opacity:1}}
