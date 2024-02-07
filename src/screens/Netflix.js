@@ -22,6 +22,18 @@ return (
   animate={{opacity:1}}
   transition={{delay:2 ,duration: 2, ease:"easeOut"}} 
   >Netflix Clone</m.h1>
+
+<m.div 
+     initial={{opacity:0}}
+     animate={{opacity:1}}
+     transition={{delay:4 ,duration: 2, ease:"easeOut"}}
+     className='year_content'>
+        <m.h2 className='year'  >2023</m.h2>
+        <button className='rating_button'>
+    <m.h2 className='rating'  >Very Interesting</m.h2>
+    </button>
+    
+    </m.div>
       
       <m.p initial={{opacity:0}}
   animate={{opacity:1}}

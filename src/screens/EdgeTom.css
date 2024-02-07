@@ -120,7 +120,7 @@ video {
 
 .length{
     padding-left: 10px;
-    font-weight: 200;
+    font-weight: 400;
     font-size:medium;
 }
 
@@ -147,7 +147,7 @@ video {
 .year{
     font-size:medium;
     padding-right: 10px;
-    font-weight: 200;
+    font-weight: 400;
 }
 
 .content>h2{
