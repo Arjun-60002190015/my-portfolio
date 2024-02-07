@@ -1,10 +1,14 @@
 import React from 'react'
 import './Rows1.css'
-import Rowsub from './Rowsub'
-import {motion as m} from 'framer-motion';
+import Rowsub from './Rowsub';
+import { useRef } from 'react';
+import {motion as m, transform, useInView, useScroll, useTransform} from 'framer-motion';
 
 
 function Rows1() {
+  const ref = useRef(null);
+  const isInView = useInView(ref, {once:true});
+
   return (
     <m.div
     initial={{x:-700}}

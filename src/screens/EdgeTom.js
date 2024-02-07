@@ -6,12 +6,15 @@ import Banner from '../Banner'
 import Row from '../Row'
 import requests from '../Requests';
 import videoBg from '../assets/videoBg.mp4';
+import { Link } from 'react-router-dom'
 
 function EdgeTom() {
 
     
   return (
-    <m.div initial={{opacity:0}}
+    <m.div 
+    exit={{opacity:[1, 0.5, 0.2, 0, -1], duration:6}}
+    initial={{opacity:0}}
     animate={{opacity:1}}
     transition={{duration: 0.75, ease:"easeOut"}}
     className='edgetom'>
@@ -24,19 +27,33 @@ function EdgeTom() {
     animate={{opacity:1}}
     transition={{delay:2 ,duration: 2, ease:"easeOut"}} 
     >Edge of Tomorrow</m.h1>
-        <m.h2 initial={{opacity:0}}
-    animate={{opacity:1}}
-    transition={{delay:4 ,duration: 2, ease:"easeOut"}} >2014</m.h2>
+     <m.div 
+     initial={{opacity:0}}
+     animate={{opacity:1}}
+     transition={{delay:4 ,duration: 2, ease:"easeOut"}}
+     className='year_content'>
+        <m.h2 className='year'  >2014</m.h2>
+        <button className='rating_button'>
+    <m.h2 className='rating'  >UA</m.h2>
+    </button>
+    <m.h2 className='length' >1h53m</m.h2>
+    </m.div>
         <m.p initial={{opacity:0}}
     animate={{opacity:1}}
-    transition={{delay:6 ,duration: 2, ease:"easeOut"}} >In short, a time loop. And Tom Cruise. And also Emily Blunt. 
+    transition={{delay:6 ,duration: 2, ease:"easeOut"}} >In short, a TIME LOOP. And TOM CRUISE. And also EMILY BLUNT. 
           Watch this once.
-           There will be no regrets. And if anybody from Warner Bros is seeing this, we need a SEQUEL. Please. </m.p>
+           <m.span 
+           initial={{opacity:0}}
+           animate={{opacity:1}}
+           transition={{delay:8 ,duration: 2, ease:"easeOut"}}
+           className='cool'> And if anybody from Warner Bros is seeing this, we need a SEQUEL. Please.</m.span> </m.p>
+        <Link to={"https://www.netflix.com/de-en/title/70298735"}>
         <m.button initial={{opacity:0}}
     animate={{opacity:1}}
-    transition={{delay:8 ,duration: 2, ease:"easeOut"}} 
-        onClick={{}} className='edge__button'>Play</m.button>
+    transition={{delay:10 ,duration: 2, ease:"easeOut"}} 
+        onClick={{}} className='edge__button'>Play</m.button> </Link>
        </m.div>
+       
        </div>
 
         

@@ -22,6 +22,7 @@ import Netflix from './screens/Netflix';
 import Amazon from './screens/Amazon';
 import IgReels from './screens/IgReels';
 import Spotify from './screens/Spotify';
+import {motion as m} from 'framer-motion';
 
 function App() {
   const [isAnimDone, setIsAnimDone] = useState(false);
@@ -63,17 +64,24 @@ function App() {
 
 
   return (
-    <div className="app">
-      <AnimatePresence>
+    <AnimatePresence mode='wait'>
+    <m.div className="app">
+      
       
       <BrowserRouter >
+      
+      
       {!isLoggedIn ? (
+        
+        
             <LoginScreen onLoginButtonClick={handleLoginButtonClick}/>
           ): 
               isAnimDone? (
               <Animat animationchecking={checkForAnimation}/>
             ):(
+              
             <Routes >
+              
               <Route path='/profile' element={<ProfileScreen/>}/>
               <Route path='/about' element={<About/>}/>
               <Route path='/education' element={<Education/>}/>
@@ -87,18 +95,24 @@ function App() {
               <Route path="/igreels" element={<IgReels/>} />
               <Route path="/netflix" element={<Netflix/>} />
               <Route path="/amazon" element={<Amazon/>} />
+              
             
 
             
 
           
         </Routes>
+        
             
         )}
+        
+        
+        
       </BrowserRouter>
-      </AnimatePresence>
+      
 
-    </div>
+    </m.div>
+    </AnimatePresence>
   );
 }
 

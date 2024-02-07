@@ -15,7 +15,7 @@ return (
      <Nav/>
      <div className='overlaySp'></div>
      <div className='spVid'>
-     <video src={videoBg2} autoPlay loop muted width={'300px'} height={'500px'} overflow={'hidden'} />
+     <video playsInline src={videoBg2} autoPlay loop muted width={'300px'} height={'500px'} overflow={'hidden'} />
      <m.div  className='content__spotify'>
       <m.h1 initial={{opacity:0}}
   animate={{opacity:1}}

@@ -117,9 +117,44 @@ video {
     padding-bottom: 10px;
 }
 
+
+.length{
+    padding-left: 10px;
+    font-weight: 200;
+    font-size:medium;
+}
+
+.rating_button{
+    padding-top: 2.5% ;
+    color: #fff;
+    outline: none;
+    border: none;
+    border-radius: 0.2vw;
+    background-color: rgba(138, 133, 133, 0.5);
+    
+}
+.rating_button>h2{
+    font-size:medium;
+}
+
+.year_content{
+    padding-bottom: 10px;
+    display: flex;
+    
+    flex-direction: row;
+}
+
+.year{
+    font-size:medium;
+    padding-right: 10px;
+    font-weight: 200;
+}
+
 .content>h2{
+    
     font-size: 150%;
     padding-bottom: 5px;
+    border: 2px solid rgb(134, 133, 133);
 }
 
 .content>p{

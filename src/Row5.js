@@ -13,7 +13,7 @@ function Row5() {
         <Rowsub
             link={"/eot"}
             image={"https://www.wallpaperflare.com/static/527/639/639/edge-of-tomorrow-tom-cruise-emily-blunt-movie-poster-wallpaper.jpg"}
-            title={"Edge Of Tomorrow(2014)"}
+            title={"Edge Of Tomorrow (2014)"}
         />
       
     </m.div>

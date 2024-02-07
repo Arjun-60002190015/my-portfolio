@@ -15,7 +15,7 @@ function Amazon() {
        <Nav/>
        <div className='overlayAm'></div>
        <div className='amazVid'>
-       <video src={videoBg1} autoPlay loop muted width={'300px'} height={'500px'} overflow={'hidden'} />
+       <video playsInline src={videoBg1} autoPlay loop muted width={'300px'} height={'500px'} overflow={'hidden'} />
        <m.div  className='content__amazon'>
         <m.h1 initial={{opacity:0}}
     animate={{opacity:1}}

@@ -12,7 +12,7 @@ import Row4 from '../Row4';
 import Lottie from 'lottie-react';
 import animationData from '../assets/Animation - 1703751593145.json'
 import Rows1 from '../Rows1';
-import {motion as m} from 'framer-motion'
+import {AnimatePresence, motion as m} from 'framer-motion'
 import Animat from './Animat';
 import Row5 from '../Row5';
 
@@ -45,7 +45,7 @@ function HomeScreen() {
 
   return ( 
     
-    
+    <AnimatePresence >
       <m.div 
     variants={containerVariants}
     initial='hidden'
@@ -91,6 +91,7 @@ function HomeScreen() {
       <Row5/>
       </div>
       </m.div>
+      </AnimatePresence>
       
     
     
