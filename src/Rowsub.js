@@ -1,15 +1,18 @@
-import React, { useRef } from 'react'
+import React, { useRef, useState } from 'react'
 import './Rowsub.css'
 import { Link } from 'react-router-dom'
 import {motion as m, transform, useInView, useScroll, useTransform, useViewportScroll} from 'framer-motion'
+import { AnimatePresence } from 'framer-motion'
 
 function Rowsub({image, title, link}){ 
   const ref = useRef(null);
   const isInView = useInView(ref, {once:true});
+  const[isVisible, setIsVisible] = useState(true);
   
   
   return (
     <m.div
+    
     whileHover={{
       textShadow: "8px 8px 8px rgb(255 255 255)",
 
@@ -20,16 +23,19 @@ function Rowsub({image, title, link}){
     whileInView={{opacity:1}}
 
     className='rowsub'>
-      <Link to={link}>
+      <Link 
+      onClick={() => setIsVisible(!isVisible)}
+      to={link}>
         
         <img className='rowsub__image'
       
           src={image}
       />
-      </Link>
+      </Link >
       <h2 ref={ref}><span style={{
         transform: isInView? "none": "translateX(-200px", 
         opacity: isInView? 1:0,
+        
         transition: "all 2s cubic-bezier(0.17, 0.55, 0.55, 1) 2s"
       }}></span>{title}</h2>
 
