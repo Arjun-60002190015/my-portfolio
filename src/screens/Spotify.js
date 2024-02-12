@@ -17,13 +17,13 @@ return (
      <div className='spVid'>
      <video playsInline src={videoBg2} autoPlay loop muted width={'300px'} height={'500px'} overflow={'hidden'} />
      <m.div  className='content__spotify'>
-      <m.h1 initial={{opacity:0}}
-  animate={{opacity:1}}
+      <m.h1 initial={{opacity:0, filter:"blur(5px)"}}
+  animate={{opacity:1, filter:"blur(0px)"}}
   transition={{delay:2 ,duration: 2, ease:"easeOut"}} 
   >Spotify Clone</m.h1>
    <m.div 
-     initial={{opacity:0}}
-     animate={{opacity:1}}
+     initial={{opacity:0, filter:"blur(5px)"}}
+     animate={{opacity:1, filter:"blur(0px)"}}
      transition={{delay:4 ,duration: 2, ease:"easeOut"}}
      className='year_content'>
         <m.h2 className='year'  >2023</m.h2>
@@ -33,8 +33,8 @@ return (
     
     </m.div>
       
-      <m.p initial={{opacity:0}}
-  animate={{opacity:1}}
+      <m.p initial={{opacity:0, filter:"blur(5px)"}}
+  animate={{opacity:1, filter:"blur(0px)"}}
   transition={{delay:3 ,duration: 2, ease:"easeOut"}} >
     So in this build, I made a clone of spotify where user after logging in can navigate from their own playlist made in their real spotify account. 
     I gave a player to listen into the music.
@@ -42,8 +42,8 @@ return (
 
       </m.p>
     <Link to={"https://github.com/Arjun-60002190015/spotify-app"}>
-      <m.button   initial={{opacity:0}}
-  animate={{opacity:1}}
+      <m.button   initial={{opacity:0, filter:"blur(5px)"}}
+  animate={{opacity:1, filter:"blur(0px)"}}
   transition={{delay:4 ,duration: 2, ease:"easeOut"}} 
     className='spotify__button'>Go to Code</m.button> </Link>
      </m.div>

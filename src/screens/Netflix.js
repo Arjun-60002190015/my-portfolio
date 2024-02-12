@@ -18,25 +18,27 @@ return (
      <div className='nfVid'>
      <video playsInline src={videoBg3} autoPlay loop muted width={'300px'} height={'500px'} overflow={'hidden'} />
      <m.div  className='content__netflix'>
-      <m.h1 initial={{opacity:0}}
-  animate={{opacity:1}}
+      <m.h1 initial={{opacity:0, filter: "blur(2px)",}}
+  animate={{opacity:1, filter: "blur(0px)",}}
   transition={{delay:2 ,duration: 2, ease:"easeOut"}} 
   >Netflix Clone</m.h1>
 
 <m.div 
-     initial={{opacity:0}}
-     animate={{opacity:1}}
+     initial={{opacity:0, filter: "blur(2px)",}}
+     
+     animate={{opacity:1, filter:"blur(0px)"}}
      transition={{delay:4 ,duration: 2, ease:"easeOut"}}
      className='year_content'>
-        <m.h2 className='year'  >2023</m.h2>
+        <m.h2 
+        className='year'  >2023</m.h2>
         <button className='rating_button'>
     <m.h2 className='rating'  >Very Interesting</m.h2>
     </button>
     
     </m.div>
       
-      <m.p initial={{opacity:0}}
-  animate={{opacity:1}}
+      <m.p initial={{opacity:0, filter:"blur(5px)"}}
+  animate={{opacity:1, filter:"blur(0px)"}}
   transition={{delay:3 ,duration: 2, ease:"easeOut"}} >
     This is the most in-depth project I have made and <Link to={"https://my-repo-sigma-amber.vercel.app/"} className='netflix__link'>hosted</Link>.
     I wanted to add a paywall but then 
@@ -47,8 +49,8 @@ return (
 
       </m.p>
     <Link to={"https://github.com/Arjun-60002190015/spotify-app"}>
-      <m.button   initial={{opacity:0}}
-  animate={{opacity:1}}
+      <m.button   initial={{opacity:0, filter:"blur(5px)"}}
+  animate={{opacity:1, filter:"blur(5px)"}}
   transition={{delay:4 ,duration: 2, ease:"easeOut"}} 
     className='netflix__button'>Go to Code</m.button> </Link>
      </m.div>

@@ -23,8 +23,8 @@ function EdgeTom() {
        <div className='edgeVid'>
        <video playsInline src={videoBg} autoPlay loop muted width={'300px'} height={'500px'} overflow={'hidden'} />
        <m.div  className='content'>
-       <m.h1 initial={{filter: "blur(20px)",}}
-    animate={{filter: "blur(0px)",}}
+       <m.h1 initial={{opacity:0, filter: "blur(20px)",}}
+    animate={{opacity:1, filter: "blur(0px)",}}
     transition={{delay:2 ,duration: 2, ease:"easeOut"}} 
     >
       <span className='transparent' styles={'background-video:videoBg1.mp4'}>
@@ -32,8 +32,8 @@ function EdgeTom() {
       </span>
       </m.h1>
      <m.div 
-     initial={{filter: "blur(2px)",}}
-     animate={{filter: "blur(0px)",}}
+     initial={{opacity:0, filter: "blur(2px)",}}
+     animate={{opacity:1, filter: "blur(0px)",}}
      transition={{delay:4 ,duration: 2, ease:"easeOut"}}
      className='year_content'>
         <m.h2 className='year'  >2014</m.h2>
