@@ -22,7 +22,7 @@ function ProfileScreen(onLoginButtonClick) {
   return (
     <m.div initial={{opacity:0}}
     animate={{opacity:1}}
-    transition={{duration: 0.75 , ease:"linear"}}
+    transition={{duration: 5 , ease:"linear"}}
     className='profileScreen'>
         <Nav/>
         <m.div initial={{opacity:0}}

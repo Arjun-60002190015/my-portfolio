@@ -31,10 +31,11 @@ function Banner() {
         backgroundPosition: "center center",
         backgroundSize: "cover",
         objectFit:"contain",
+        
         backgroundColor: "rgba(51, 51, 51, 0.5)",
         // Black background: https://wallpapercave.com/wp/wp3321103.jpg
         
-        backgroundImage: `url("https://image.tmdb.org/t/p/original/${movie?.backdrop_path}")`, 
+        backgroundImage : `url("https://image.tmdb.org/t/p/original/${movie?.backdrop_path}")`, style:{filter:"blur(50px)"}, 
         
     }}>
         <m.div
@@ -42,19 +43,27 @@ function Banner() {
     animate={{opacity:1}} 
     transition={{delay: 0.75 , duration: 3, ease:"easeOut"}}
     className='banner__contents'>
-            <h1 className='banner__title'>
+            <m.h1 
+            initial ={{filter:"blur(5px)"}}
+            animate= {{filter:"blur(0)"}}  
+            transition={{duration:3, ease:"easeInOut"}}
+            className='banner__title'>
                 
                 Arjun Pathak
-            </h1>
-            <div className='banner__buttons'>
+            </m.h1>
+            <m.div 
+            initial ={{filter:"blur(5px)"}}
+            animate= {{filter:"blur(0)"}}  
+            transition={{duration:5, ease:"easeInOut"}}
+            className='banner__buttons'>
                 <button className='banner__button'>Engineer</button>
                 <button className='banner__button'>22</button>
 
-            </div>
+            </m.div>
             <m.h1 
-            initial={ {opacity:-1}}
-            animate={{opacity:1}} 
-            transition={{delay: 3 , duration: 3, ease:"easeOut"}}
+            initial={{filter:"blur(5px)"}}
+            animate={{filter:"blur(0px)"}} 
+            transition={{duration: 7, ease:"easeOut"}}
             className='banner__description'>
                 Projects and links are below.
                 To know more about me, click on the profile button.

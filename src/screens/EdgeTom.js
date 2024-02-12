@@ -23,13 +23,17 @@ function EdgeTom() {
        <div className='edgeVid'>
        <video playsInline src={videoBg} autoPlay loop muted width={'300px'} height={'500px'} overflow={'hidden'} />
        <m.div  className='content'>
-        <m.h1 initial={{opacity:0}}
-    animate={{opacity:1}}
+       <m.h1 initial={{filter: "blur(20px)",}}
+    animate={{filter: "blur(0px)",}}
     transition={{delay:2 ,duration: 2, ease:"easeOut"}} 
-    >Edge of Tomorrow</m.h1>
+    >
+      <span className='transparent' styles={'background-video:videoBg1.mp4'}>
+      Edge of Tomorrow
+      </span>
+      </m.h1>
      <m.div 
-     initial={{opacity:0}}
-     animate={{opacity:1}}
+     initial={{filter: "blur(2px)",}}
+     animate={{filter: "blur(0px)",}}
      transition={{delay:4 ,duration: 2, ease:"easeOut"}}
      className='year_content'>
         <m.h2 className='year'  >2014</m.h2>
@@ -38,8 +42,8 @@ function EdgeTom() {
     </button>
     <m.h2 className='length' >1h53m</m.h2>
     </m.div>
-        <m.p initial={{opacity:0}}
-    animate={{opacity:1}}
+        <m.p initial={{opacity:0, filter: "blur(2px)",}}
+    animate={{opacity:1, filter: "blur(0px)",}}
     transition={{delay:6 ,duration: 2, ease:"easeOut"}} >In short, a TIME LOOP. And TOM CRUISE. And also EMILY BLUNT. 
           Watch this once.
            <m.span 
@@ -48,8 +52,8 @@ function EdgeTom() {
            transition={{delay:8 ,duration: 2, ease:"easeOut"}}
            className='cool'> And if anybody from Warner Bros is seeing this, we need a SEQUEL. Please.</m.span> </m.p>
         <Link to={"https://www.netflix.com/de-en/title/70298735"}>
-        <m.button initial={{opacity:0}}
-    animate={{opacity:1}}
+        <m.button initial={{opacity:0, filter: "blur(2px)",}}
+    animate={{opacity:1, filter: "blur(0px)",}}
     transition={{delay:10 ,duration: 2, ease:"easeOut"}} 
         onClick={{}} className='edge__button'>Play</m.button> </Link>
        </m.div>
