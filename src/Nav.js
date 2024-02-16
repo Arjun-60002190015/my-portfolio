@@ -51,7 +51,7 @@ function Nav() {
          <m.img 
          drag
          dragConstraints={{left:0, top:0, right:0, bottom:0}}
-         dragElastic={1}
+         dragElastic={1.8}
          onClick={()=> history("/")}
         className='nav__logo'
         src="https://upload.wikimedia.org/wikipedia/commons/7/7a/Logonetflix.png" alt=""

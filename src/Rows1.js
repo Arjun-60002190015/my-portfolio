@@ -17,13 +17,13 @@ function Rows1() {
     className='rows1'>
         <Rowsub
             link={"/pdm"}
-            image={"https://info.primarycare.hms.harvard.edu/hubfs/6.23.jpg"}
+            image={"https://media.post.rvohealth.io/wp-content/uploads/2020/09/11008-Parkinsons_Disease_1200x628-facebook-1200x628.jpg"}
             title={"Parkinson's Detection Model"}
             />
 
       <Rowsub
               link={"/hsa"}
-              image={"https://itbrief.com.au/uploads/story/2023/11/14/preview_img-kBYEZKDZ6mTLWr4vhOVJp1PQ.webp"}
+              image={"https://cdn.thewirecutter.com/wp-content/media/2022/06/home-security-system-2048px-5235-2x1-1.jpg?auto=webp&quality=75&crop=2:1&width=1024"}
               title={"Home Security and Automation"}
           />
         
