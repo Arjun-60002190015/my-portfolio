@@ -35,9 +35,14 @@ function Banner() {
         backgroundColor: "rgba(51, 51, 51, 0.5)",
         // Black background: https://wallpapercave.com/wp/wp3321103.jpg
         
-        backgroundImage : `url("https://image.tmdb.org/t/p/original/${movie?.backdrop_path}")`, style:{filter:"blur(50px)"}, 
+        backgroundImage : `url("https://image.tmdb.org/t/p/original/${movie?.backdrop_path}")`, 
         
     }}>
+        <m.div 
+        initial={ {opacity:-1}}
+        animate={{opacity:1}} 
+        transition={{delay: 0.75 , duration: 3, ease:"easeOut"}}
+        className='banner__overlay'></m.div>
         <m.div
     initial={ {opacity:-1}}
     animate={{opacity:1}} 
@@ -46,7 +51,7 @@ function Banner() {
             <m.h1 
             initial ={{filter:"blur(5px)"}}
             animate= {{filter:"blur(0)"}}  
-            transition={{duration:3, ease:"easeInOut"}}
+            transition={{delay: 0.75, duration:3, ease:"easeInOut"}}
             className='banner__title'>
                 
                 Arjun Pathak

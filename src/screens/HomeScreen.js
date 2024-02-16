@@ -24,6 +24,7 @@ import Row5 from '../Row5';
 
 function HomeScreen() { 
   
+  
   const containerVariants = {
     hidden:{
       opacity:0, 
@@ -35,7 +36,7 @@ function HomeScreen() {
       transition: {duration: 0.75, ease:"easeOut"}
     },
     exit:{
-      x: '-100vh',
+      opacity:1, filter: "blur(0px)",
       transition: {ease:'easeOut'}
 
     }
