@@ -59,7 +59,7 @@ function Banner() {
             <m.div 
             initial ={{filter:"blur(5px)"}}
             animate= {{filter:"blur(0)"}}  
-            transition={{duration:5, ease:"easeInOut"}}
+            transition={{delay: 1, duration:5, ease:"easeInOut"}}
             className='banner__buttons'>
                 <button className='banner__button'>Engineer</button>
                 <button className='banner__button'>22</button>
@@ -68,7 +68,7 @@ function Banner() {
             <m.h1 
             initial={{filter:"blur(5px)"}}
             animate={{filter:"blur(0px)"}} 
-            transition={{duration: 7, ease:"easeOut"}}
+            transition={{delay: 1.5, duration: 7, ease:"easeOut"}}
             className='banner__description'>
                 Projects and links are below.
                 To know more about me, click on the profile button.
