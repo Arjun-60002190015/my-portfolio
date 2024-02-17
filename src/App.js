@@ -25,6 +25,7 @@ import Spotify from './screens/Spotify';
 import {motion as m} from 'framer-motion';
 
 function App() {
+  
   const [isAnimDone, setIsAnimDone] = useState(false);
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const user = 
@@ -66,14 +67,11 @@ function App() {
   return (
     
     <m.div className="app">
-      
-      
-    <BrowserRouter>
-  {!isLoggedIn ? (
-    <LoginScreen onLoginButtonClick={handleLoginButtonClick} />
-  ) : (
-    <AnimatePresence>
-      {isAnimDone ? (
+  <BrowserRouter>
+    {!isLoggedIn ? (
+      <LoginScreen onLoginButtonClick={handleLoginButtonClick} />
+    ) : (
+      isAnimDone ? (
         <Animat key="animat" animationchecking={checkForAnimation} />
       ) : (
         <Routes>
@@ -91,13 +89,10 @@ function App() {
           <Route path="/netflix" element={<Netflix />} />
           <Route path="/amazon" element={<Amazon />} />
         </Routes>
-      )}
-    </AnimatePresence>
-  )}
-</BrowserRouter>
-      
-
-    </m.div>
+      )
+    )}
+  </BrowserRouter>
+</m.div>
     
   );
 }

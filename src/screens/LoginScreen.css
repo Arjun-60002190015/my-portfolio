@@ -35,13 +35,16 @@
     width: 100%;
     z-index: 1;
     height: 100vh;
+    
     background: rgba(0, 0, 0, 0,4);
+    backdrop-filter: blur(3px);
+    /*
     background-image: linear-gradient(
         to top,
         rgba(0, 0, 0, 0.8) 0,
         rgba(0, 0, 0, 0.8) 60%,
         rgba(0, 0, 0, 0.8) 100%  
-    );
+    ); */
 }
 .loginScreen__body>h1{
     font-size: 3.125rem;

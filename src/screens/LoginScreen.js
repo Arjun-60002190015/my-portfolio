@@ -46,7 +46,7 @@ function LoginScreen({onLoginButtonClick}) {
             transition={{delay:6, duration: 2 , ease:"easeOut"}}
             >Inspired from Netflix.</m.h1>
              <m.div 
-             initial={{opacity:-2, filter:"blur(5px)"}}
+             initial={{opacity:-2, filter:"blur(2px)"}}
              animate={{opacity:1, filter:"blur(0px)"}}
              transition={{delay:8, duration: 2.5 , ease:"easeOut"}}
              className='loginScreen__input'>
