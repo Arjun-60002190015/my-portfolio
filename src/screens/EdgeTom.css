@@ -132,7 +132,7 @@ video {
 }
 
 .rating_button{
-    padding-top: 2.5% ;
+    padding: 5% ;
     color: #fff;
     outline: none;
     border: none;
@@ -142,6 +142,7 @@ video {
 }
 .rating_button>h2{
     font-size:medium;
+    
 }
 
 .year_content{

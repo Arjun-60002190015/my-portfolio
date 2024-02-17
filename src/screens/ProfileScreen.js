@@ -25,16 +25,16 @@ function ProfileScreen(onLoginButtonClick) {
     transition={{duration: 5 , ease:"linear"}}
     className='profileScreen'>
         <Nav/>
-        <m.div initial={{opacity:0}}
-        animate={{opacity:1}}
+        <m.div initial={{x:-5,y:20,opacity:0}}
+        animate={{x:-5, y:20, opacity:1}}
         transition={{delay:0.75, duration: 0.75 , ease:"easeOut"}} 
         className='profileScreen__body'>
           <h1> Who's watching?</h1>
           
 
         </m.div>
-        <m.div initial={{opacity:0}}
-        animate={{opacity:1}}
+        <m.div initial={{x:-5, y:20, opacity:0}}
+        animate={{x:-5, y:20, opacity:1}}
         transition={{delay:1.5, duration: 1 , ease:"easeOut" }} 
         className='profileScreen__info'>
             
