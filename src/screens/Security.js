@@ -25,9 +25,9 @@ function Security() {
         animate={{opacity:1}}
         transition={{delay:1.7, duration: 1.5 , ease:"easeOut"}}
         className='security__gradient'/>
-      <m.div className='content'>
+      <m.div className='sec_content'>
 
-        <m.h1
+        <m.h1 className='title'
         initial={{opacity:0,filter: "blur(5px)"}}
         animate={{opacity:1, filter: "blur(0px)"}}
         transition={{duration:2, delay:1.7}}

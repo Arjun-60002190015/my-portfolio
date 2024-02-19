@@ -2,18 +2,15 @@
     height: 100px;
     width: auto;
     border-radius: 10px;
-    transition: transform 0.5s;
+    transition: transform 0.1s;
     margin-right:auto
 }
 .rowsub__image:hover{
-    transform: scale(1.08) ;
-    
+    transform: scale(1.1) ;
     opacity: 1;
 }
 
 .rowsub{
-    
-    
     height:20vh;
     display: flex;
     flex-direction: column;
@@ -22,8 +19,8 @@
 
 .rowsub>h2{
     font-size: 15px;
-    padding: 2px;
-    font-weight: 70;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: rgb(186, 182, 182);
+    padding: 3px;
+    font-weight: 80;
+    font-family:'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    color: rgb(241, 234, 234);
 }

@@ -112,6 +112,7 @@ video {
     justify-content: center;
     color: white;
     align-items: center;
+    text-shadow: #000000 3px 3px 8px;
 }
 
 .content>h1{

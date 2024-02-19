@@ -30,6 +30,7 @@
     font-weight: 800;
     padding-bottom: 0.3rem;
     opacity: 3;
+    text-shadow: #000000 3px 3px 8px;
     
     
     
@@ -49,6 +50,7 @@
     font-size: 14px;
     max-width: 200px;
     height: 80px;
+    text-shadow: #000000 3px 3px 8px;
 }
 
 .banner--fadeBottom{
