@@ -1,0 +1,59 @@
+
+
+.dataStructures{
+    position: relative;
+    height: 100%;
+    background: url("https://media.sproutsocial.com/uploads/2022/11/sprout_FacebookAlgorithm_Outline.jpg") center no-repeat;
+    background-size: cover;
+}
+
+.data__gradient{
+    
+    width: 100%;
+    z-index: 1;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    
+    backdrop-filter: blur(15px);
+}
+
+.data__button{
+    cursor: pointer;
+    color: #fff;
+    outline: none;
+    border: none;
+    font-weight: 900;
+    border-radius: 0.2vw;
+    padding-left: 2 rem;
+    padding-right: 2 rem;
+    margin-right: 1 rem;
+    padding-top: 0.55rem;
+    background-color: rgba(42, 41, 41, 0.5);
+    padding-bottom: 0.5rem;
+
+}
+
+
+.data__button:hover{
+    color: #000;
+    background-color: #e6e6e6;
+    transition: 0s;
+}
+
+.content>h1{
+    font-size: 200%;
+    padding-bottom: 10px;
+    
+}
+.content>h2{
+    
+    font-size: 150%;
+    padding-bottom: 5px;
+    border: 2px solid rgb(134, 133, 133);
+}
+
+.content>p{
+    margin-left: 20%;
+    margin-right: 20%;
+    padding-bottom: 10px;
+}

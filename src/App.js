@@ -24,6 +24,7 @@ import IgReels from './screens/IgReels';
 import Spotify from './screens/Spotify';
 import {motion as m} from 'framer-motion';
 
+
 function App() {
   
   const [isAnimDone, setIsAnimDone] = useState(false);
@@ -66,32 +67,44 @@ function App() {
 
   return (
     
-    <m.div className="app">
-  <BrowserRouter>
+  <m.div className="app">
+    
+  <BrowserRouter >
+  
+  
     {!isLoggedIn ? (
       <LoginScreen onLoginButtonClick={handleLoginButtonClick} />
     ) : (
       isAnimDone ? (
         <Animat key="animat" animationchecking={checkForAnimation} />
       ) : (
-        <Routes>
-          <Route path="/profile" element={<ProfileScreen />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/education" element={<Education />} />
-          <Route path="/" element={<HomeScreen />} />
-          <Route path="/animation" element={<Animat />} />
-          <Route path="/eot" element={<EdgeTom />} />
-          <Route path="/pdm" element={<Parkinsons />} />
-          <Route path="/hsa" element={<Security />} />
-          <Route path="/bds" element={<DataStructures />} />
-          <Route path="/spotify" element={<Spotify />} />
-          <Route path="/igreels" element={<IgReels />} />
-          <Route path="/netflix" element={<Netflix />} />
+        
+        
+        <Routes >
+          <Route  path="/profile" element={<ProfileScreen />} />
+          <Route  path="/about" element={<About />} />
+          <Route  path="/education" element={<Education />} />
+          <Route  path="/" element={<HomeScreen />} />
+          <Route  path="/animation" element={<Animat />} />
+          <Route  path="/eot" element={<EdgeTom />} />
+          <Route  path="/pdm" element={<Parkinsons />} />
+          <Route  path="/hsa" element={<Security />} />
+          <Route  path="/bds" element={<DataStructures />} />
+          <Route  path="/spotify" element={<Spotify />} />
+          <Route  path="/igreels" element={<IgReels />} />
+          <Route  path="/netflix" element={<Netflix />} />
           <Route path="/amazon" element={<Amazon />} />
         </Routes>
+        
+        
+        
       )
     )}
+    
+    
   </BrowserRouter>
+  
+  
 </m.div>
     
   );

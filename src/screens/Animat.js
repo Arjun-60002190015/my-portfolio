@@ -9,7 +9,7 @@ import { useRef, useEffect } from 'react'
 function Animat(animationchecking) {
     const anima = useRef(LottieRefCurrentProps);
     const animationRef = useRef(null);
-/*
+  /*
   useEffect(() => {
     // Start the animation after a delay of 5 seconds
     const delayTimeout = setTimeout(() => {
@@ -28,7 +28,7 @@ function Animat(animationchecking) {
     ref={animationRef}
     onAnimationEnd={animationchecking} style={{
       
-    }} lottieRef={anima} loop={false} animationData={animationData}
+    }} lottieRef={anima} loop={true} animationData={animationData}
 
         
         />
