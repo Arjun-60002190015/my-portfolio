@@ -33,6 +33,12 @@ function Rows2() {
                   image={"https://www.shutterstock.com/image-vector/linkedin-black-square-blue-colour-260nw-2320554949.jpg"}
                   title={"LinkedIn"}
               />
+
+              <Rowsub
+                  link={"https://www.instagram.com/arjun__pathak/"}
+                  image={"https://helios-i.mashable.com/imagery/articles/05yfQXQPTICsoO41nfHTrlI/hero-image.fill.size_1248x702.v1640123672.png"}
+                  title={"Instagram"}
+              />
               
     
             
