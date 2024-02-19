@@ -8,8 +8,8 @@ import { Link } from 'react-router-dom';
 function Amazon() {
     //const link1 = URL("https://github.com/Arjun-60002190015/amazon-clone");
   return (
-    <m.div initial={{opacity:0, filter:"blur(5px)"}}
-    animate={{opacity:1, filter:"blur(0px)"}}
+    <m.div initial={{opacity:0, filter:"blur(5px)", scale:0}}
+    animate={{opacity:1, filter:"blur(0px)", scale:1}}
     transition={{duration: 0.75, ease:"easeOut"}}
     className='amazon'>
        <Nav/>

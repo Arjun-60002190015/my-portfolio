@@ -9,8 +9,8 @@ import {motion as m} from 'framer-motion';
 function Netflix() {
   //const link1 = URL("https://github.com/Arjun-60002190015/amazon-clone");
 return (
-  <m.div initial={{opacity:0}}
-  animate={{opacity:1}}
+  <m.div initial={{opacity:0, scale:0}}
+  animate={{opacity:1, scale:1}}
   transition={{duration: 0.75, ease:"easeOut"}}
   className='netflix'>
      <Nav/>
@@ -50,7 +50,7 @@ return (
       </m.p>
     <Link to={"https://github.com/Arjun-60002190015/spotify-app"}>
       <m.button   initial={{opacity:0, filter:"blur(5px)"}}
-  animate={{opacity:1, filter:"blur(5px)"}}
+  animate={{opacity:1, filter:"blur(0px)"}}
   transition={{delay:4 ,duration: 2, ease:"easeOut"}} 
     className='netflix__button'>Go to Code</m.button> </Link>
      </m.div>

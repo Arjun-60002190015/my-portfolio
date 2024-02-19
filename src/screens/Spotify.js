@@ -8,8 +8,8 @@ import { Link } from 'react-router-dom';
 function Spotify() {
   //const link1 = URL("https://github.com/Arjun-60002190015/amazon-clone");
 return (
-  <m.div initial={{opacity:0}}
-  animate={{opacity:1}}
+  <m.div initial={{opacity:0, scale:0}}
+  animate={{opacity:1, scale:1}}
   transition={{duration: 0.75, ease:"easeOut"}}
   className='spotify'>
      <Nav/>

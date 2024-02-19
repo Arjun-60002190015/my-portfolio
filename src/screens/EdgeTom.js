@@ -14,8 +14,8 @@ function EdgeTom() {
   return (
     <m.div 
     exit={{opacity:[1, 0.5, 0.2, 0, -1], duration:6}}
-    initial={{opacity:0}}
-    animate={{opacity:1}}
+    initial={{opacity:0, scale:0}}
+    animate={{opacity:1, scale:1}}
     transition={{duration: 0.75, ease:"easeOut"}}
     className='edgetom'>
        <Nav/>

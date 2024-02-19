@@ -15,6 +15,7 @@ import Rows1 from '../Rows1';
 import {AnimatePresence, motion as m} from 'framer-motion'
 import Animat from './Animat';
 import Row5 from '../Row5';
+import InfiniteNav from '../InfiniteNav';
 
 
 
@@ -59,6 +60,7 @@ function HomeScreen() {
       
       <Nav/>
       <Banner/>
+      
       <div className='setup'>
       <m.h2 
       
