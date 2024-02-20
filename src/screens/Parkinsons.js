@@ -9,7 +9,7 @@ function Parkinsons() {
     <m.div 
     initial={{scale:0}}
     animate={{scale:1}}
-    transition={{type:spring , stiffness:260, damping:30}}
+    
     className='parkinsons'>
       <Nav/>
       <div className='parkinsons__background'>
@@ -26,7 +26,7 @@ function Parkinsons() {
         initial={{opacity:0,filter: "blur(5px)"}}
         animate={{opacity:1, filter: "blur(0px)"}}
         transition={{duration:2, delay:1.7}}
-        >Parkinson's Detection Model</m.h1>
+        >Parkinson's Detection</m.h1>
         <m.p
         initial={{opacity:0, filter: "blur(5px)"}}
         animate={{opacity:1, filter: "blur(0px)"}}

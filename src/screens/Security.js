@@ -31,7 +31,7 @@ function Security() {
         initial={{opacity:0,filter: "blur(5px)"}}
         animate={{opacity:1, filter: "blur(0px)"}}
         transition={{duration:2, delay:1.7}}
-        >Home Security and Automation</m.h1>
+        >Home Security</m.h1>
         <m.p
         initial={{opacity:0, filter: "blur(5px)"}}
         animate={{opacity:1, filter: "blur(0px)"}}

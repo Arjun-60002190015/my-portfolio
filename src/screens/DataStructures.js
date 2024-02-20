@@ -9,7 +9,7 @@ function DataStructures() {
     <m.div 
     initial={{scale:0}}
     animate={{scale:1}}
-    transition={{duration:0.5}}
+    
     className='dataStructures'>
       <Nav/>
       <div className='data__background'>
@@ -26,12 +26,12 @@ function DataStructures() {
         initial={{opacity:0,filter: "blur(5px)"}}
         animate={{opacity:1, filter: "blur(0px)"}}
         transition={{duration:2, delay:1.7}}
-        >Some Data Structures</m.h1>
+        >Basic Data Structures</m.h1>
         <m.p
         initial={{opacity:0, filter: "blur(5px)"}}
         animate={{opacity:1, filter: "blur(0px)"}}
         transition={{duration:2, delay:3}}
-        > Some basic data structures I encountered. Might help you all. Check it out. The code has Queues, Trees, LinkedLists, Graphs, HashTables, Stacks and BST.</m.p>
+        > Some basic data structures I encountered. Might help you all. Check it out. The repo has Queues, Trees, LinkedLists, Graphs, HashTables, Stacks and BST.</m.p>
             <Link to={"https://github.com/Arjun-60002190015/Factorial"}>
         <m.button initial={{opacity:0, filter: "blur(2px)",}}
     animate={{opacity:1, filter: "blur(0px)",}}
