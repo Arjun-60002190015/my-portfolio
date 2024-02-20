@@ -39,7 +39,7 @@ function Security() {
         > Aimed to provide protection at homes. We attached a PiR sensor, which activated through movement and a camera (recorded movements and intruders) and sent a mail to the owner. 
         The setup aimed to be low cost than the current security models.
         </m.p>
-            <Link to={"https://technojournal.djsceietesf.com/dj-strike"}>
+            <Link to={"https://drive.google.com/file/d/1KE9uXvSXeX4O6I-ulGons_TrDBg6eTCl/view?usp=sharing"}>
         <m.button initial={{opacity:0, filter: "blur(2px)",}}
     animate={{opacity:1, filter: "blur(0px)",}}
     transition={{delay:5,duration: 2, ease:"easeOut"}} 
