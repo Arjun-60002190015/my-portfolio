@@ -19,6 +19,7 @@ function Rows1() {
             link={"/pdm"}
             image={"https://media.post.rvohealth.io/wp-content/uploads/2020/09/11008-Parkinsons_Disease_1200x628-facebook-1200x628.jpg"}
             title={"Parkinson's Detection Model"}
+            image2={"https://cdn.thewirecutter.com/wp-content/media/2022/06/home-security-system-2048px-5235-2x1-1.jpg?auto=webp&quality=75&crop=2:1&width=1024"}
             />
 
       <Rowsub

@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 import {motion as m, transform, useInView, useScroll, useTransform, useViewportScroll} from 'framer-motion'
 import { AnimatePresence } from 'framer-motion'
 
-function Rowsub({image, title, link}){ 
+function Rowsub({image, title, link, image2}){ 
   const ref = useRef(null);
   const isInView = useInView(ref, {once:true});
   const[isVisible, setIsVisible] = useState(true);
@@ -23,15 +23,13 @@ function Rowsub({image, title, link}){
     whileInView={{opacity:1}}
 
     className='rowsub'>
-      <Link 
+      <Link
       onClick={() => setIsVisible(!isVisible)}
       to={link}>
+        <img className='rowsub__image'src={image}/>
         
-        <img className='rowsub__image'
-      
-          src={image}
-      />
       </Link >
+      
       <h2 ref={ref}><span style={{
         transform: isInView? "none": "translateX(-200px", 
         opacity: isInView? 1:0,

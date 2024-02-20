@@ -39,6 +39,11 @@ function Rows2() {
                   image={"https://helios-i.mashable.com/imagery/articles/05yfQXQPTICsoO41nfHTrlI/hero-image.fill.size_1248x702.v1640123672.png"}
                   title={"Instagram"}
               />
+              <Rowsub
+                  link={"https://drive.google.com/file/d/1Uk4VJ4nn0xh5LTBO0qrVY1P9PlKE77Qa/view?usp=sharing"}
+                  image={"https://cdn-01.cms-ap-v2i.applyflow.com/mayday-recruitment/wp-content/cache/bb-plugin/cache/thumbnail-photos-Website-7-landscape.png"}
+                  title={"My Resume"}
+              />
               
     
             
