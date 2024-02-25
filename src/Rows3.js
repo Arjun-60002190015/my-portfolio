@@ -9,8 +9,8 @@ function Rows3(link, image, title) {
  
   return (
    <m.div
-   initial={{x:-700}}
-   animate={{x:15}} 
+   initial={{x:15, scale:0}}
+    animate={{x:15, scale:1}} 
    transition={{delay:1.15, duration: 0.74, ease:"easeOut"}} className='rows3'>
       
  
