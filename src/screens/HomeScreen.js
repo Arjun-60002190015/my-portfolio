@@ -8,7 +8,7 @@ import Row from '../Row';
 import Rows2 from '../Rows2';
 import Rows3 from '../Rows3';
 import Row4 from '../Row4';
-
+import Marquee from 'react-fast-marquee';
 import Lottie from 'lottie-react';
 import animationData from '../assets/Animation - 1703751593145.json'
 import Rows1 from '../Rows1';
@@ -16,6 +16,7 @@ import {AnimatePresence, motion as m} from 'framer-motion'
 import Animat from './Animat';
 import Row5 from '../Row5';
 import InfiniteNav from '../InfiniteNav';
+
 
 
 
@@ -60,7 +61,23 @@ function HomeScreen() {
       
       <Nav/>
       <Banner/>
-      
+      <m.div 
+      initial={{filter:"blur(5px)", opacity:0}}
+      animate={{filter:"blur(0px)", opacity:1}} 
+      transition={{delay:10, duration:3}}
+      className='last'>
+      <Marquee 
+                
+                speed={27} pauseOnHover={true} >
+                <m.div 
+                
+                className='connect'>
+                    <h2>7977093841  •  arjunpathak164@gmail.com</h2>
+                    
+                    
+                </m.div>
+                </Marquee>
+                </m.div>
       <div className='setup'>
       <m.h2 
       

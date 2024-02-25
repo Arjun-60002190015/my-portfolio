@@ -23,6 +23,8 @@ import Amazon from './screens/Amazon';
 import IgReels from './screens/IgReels';
 import Spotify from './screens/Spotify';
 import {motion as m} from 'framer-motion';
+import InfiniteNav from './InfiniteNav';
+import Banner from './Banner';
 
 
 function App() {
@@ -94,6 +96,9 @@ function App() {
           <Route  path="/igreels" element={<IgReels />} />
           <Route  path="/netflix" element={<Netflix />} />
           <Route path="/amazon" element={<Amazon />} />
+          <Route path="/carousel" element={<InfiniteNav/>} />
+          <Route path="/banner" element={<Banner/>} />
+          
         </Routes>
         
         

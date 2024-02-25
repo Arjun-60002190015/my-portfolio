@@ -44,9 +44,9 @@ function Nav() {
         <div className='nav__content'>
         <m.div
         variants={pathVar}
-    initial={{x:-250}}
-    animate={{x:-15}}
-    transition={{duration: 2, ease:"easeOut", type:"spring"}}
+    initial={{filter:'blur(5px)', scale:1.08}}
+    animate={{filter:'blur(0px)', scale:1}}
+    transition={{duration: 0.5, ease:"easeOut", type:"spring"}}
     className='an_image'>
          <m.img 
          drag

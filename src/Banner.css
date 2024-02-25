@@ -3,10 +3,9 @@
     position: relative;
     color: white;
     object-fit: contain;
-    
-
-    
 }
+
+
 
 .banner__overlay{
     position: absolute;
@@ -16,6 +15,16 @@
     height: 440px;
     
     backdrop-filter: blur(2px);
+}
+
+.connect>h2{
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.connect{
+    flex-direction: row;
+    display: flex;
 }
 
 .banner__contents{
@@ -85,3 +94,4 @@
     background-color: #e6e6e6;
     transition: 0s;
 }
+

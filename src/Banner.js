@@ -3,6 +3,7 @@ import "./Banner.css";
 import axios from './axios';
 import requests from './Requests';
 import {motion as m} from 'framer-motion';
+import Marquee from 'react-fast-marquee';
 
 function Banner() {
     const[movie, setMovie] = useState([]);
@@ -31,11 +32,11 @@ function Banner() {
         backgroundPosition: "center center",
         backgroundSize: "cover",
         objectFit:"contain",
-        
+        //https://image.tmdb.org/t/p/original/${movie?.backdrop_path}
         backgroundColor: "rgba(51, 51, 51, 0.5)",
         // Black background: https://wallpapercave.com/wp/wp3321103.jpg
         //https://cdna.artstation.com/p/assets/images/images/017/022/542/large/amirhosein-naseri-desktop-screenshot-2019-04-03-18-17-47-11.jpg?1554338571
-        backgroundImage : `url("https://image.tmdb.org/t/p/original/${movie?.backdrop_path}")`, 
+        backgroundImage : `url("https://www.webfx.com/wp-content/uploads/2021/10/step_09_bats_02.jpg")`, 
         
     }}>
         <m.div 
@@ -75,12 +76,21 @@ function Banner() {
                 
             </m.h1>
         </m.div>
+        
+        
+        
 
         <div className='banner--fadeBottom'>
+
+               
             
         </div>
+        
+        
+        
       
     </header>
+    
   );
 }
 

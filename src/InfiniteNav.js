@@ -3,7 +3,7 @@ import './InfiniteNav.css'
 
 function InfiniteNav() {
   return (
-    <div>
+    <div  className="infiniteNav">
       
     </div>
   )

@@ -19,7 +19,9 @@ function EdgeTom() {
     transition={{duration: 0.75, ease:"easeOut"}}
     className='edgetom'>
        <Nav/>
-       <div className='overlay'></div>
+       <m.div 
+       transition={{delay:2}}
+       className='overlay'></m.div>
        <div className='edgeVid'>
        <video playsInline src={videoBg} autoPlay loop muted width={'300px'} height={'500px'} overflow={'hidden'} />
        <m.div  className='content'>
