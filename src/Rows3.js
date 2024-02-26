@@ -18,6 +18,7 @@ function Rows3(link, image, title) {
             link={"/spotify"}
             image={"https://t4.ftcdn.net/jpg/03/66/06/83/360_F_366068390_OZvv8ESGxZpe6XVHRkex0UXiC7iCbCMq.jpg"}
             title={"Spotify"}
+            image2={"https://cdn.vox-cdn.com/thumbor/pNxD2NFOCjbljnMPUSGdkFWeDjI=/0x0:3151x2048/1400x788/filters:focal(1575x1024:1576x1025)/cdn.vox-cdn.com/uploads/chorus_asset/file/15844974/netflixlogo.0.0.1466448626.png"}
             />
  
       

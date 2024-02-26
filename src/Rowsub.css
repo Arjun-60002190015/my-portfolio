@@ -8,12 +8,18 @@
     width: auto;
     border-radius: 10px;
     transition: transform 0.1s;
-    margin-right:auto
+    margin-right:auto;
+    
+   
 }
+
+
+
 .rowsub__image:hover{
     transform: scale(1.1) ;
     opacity: 1;
 }
+
 
 
 

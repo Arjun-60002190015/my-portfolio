@@ -5,6 +5,7 @@ import {motion as m, transform, useInView, useScroll, useTransform, useViewportS
 import { AnimatePresence } from 'framer-motion'
 
 function Rowsub({image, title, link, image2}){ 
+  const [over, setOver] = useState(false);
   const ref = useRef(null);
   const isInView = useInView(ref, {once:true});
   const[isVisible, setIsVisible] = useState(true);
@@ -12,7 +13,8 @@ function Rowsub({image, title, link, image2}){
   
   return (
     <m.div
-    
+    onMouseOver={()=> setOver(true)}
+    onMouseOut={()=> setOver(false)}
     whileHover={{
       textShadow: "8px 8px 8px rgb(255 255 255)",
 
@@ -26,7 +28,12 @@ function Rowsub({image, title, link, image2}){
       <Link
       onClick={() => setIsVisible(!isVisible)}
       to={link}>
-        <img className='rowsub__image'src={image}/>
+        <m.img 
+        initial={{filter:"blur(5px)"}}
+        animate={{filter:"blur(0px)"}} 
+        transition={{delay:4, duration:0.7}}
+        className='rowsub__image'src={over? image2:image} />
+        
         
       </Link >
       
