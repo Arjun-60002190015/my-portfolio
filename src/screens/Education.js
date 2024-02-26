@@ -22,11 +22,8 @@ function Education() {
       <h2>B.Tech - Dwarkadas J. Sanghvi College of Engineering - Electronics and Telecommunication Engineering
       </h2>
       
-      <h2 style={{fontStyle:"italic"}}>8.12 GPA</h2>
-      <h2>12th Science - <span style={{fontStyle:"italic"}}>64%</span>
-      </h2>
-      <h2>10th ICSE - <span style={{fontStyle:"italic"}}>81%</span>
-      </h2>
+      <h2 style={{fontStyle:"italic"}}>(8.12 GPA)</h2>
+      
         
       </div>
             
@@ -37,3 +34,10 @@ function Education() {
 }
 
 export default Education
+
+/*
+<h2>12th Science - <span style={{fontStyle:"italic"}}>64%</span>
+      </h2>
+      <h2>10th ICSE - <span style={{fontStyle:"italic"}}>81%</span>
+      </h2>
+      */

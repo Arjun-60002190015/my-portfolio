@@ -127,9 +127,9 @@ video {
 
 
 .length{
-    padding-left: 10px;
+    
     font-weight: 400;
-    font-size:medium;
+    font-size:small;
 }
 
 .rating_button{
@@ -137,8 +137,8 @@ video {
     color: #fff;
     outline: none;
     border: none;
-    border-radius: 0.2vw;
-    background-color: rgba(138, 133, 133, 0.5);
+    
+    background-color: rgba(24, 23, 23, 0.5);
     
 }
 .rating_button>h2{
@@ -154,7 +154,7 @@ video {
 }
 
 .year{
-    font-size:medium;
+    font-size:small;
     padding-right: 10px;
     font-weight: 400;
 }

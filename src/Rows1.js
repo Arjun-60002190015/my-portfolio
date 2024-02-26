@@ -13,7 +13,7 @@ function Rows1() {
     <m.div
     initial={{x:15, scale:0}}
     animate={{x:15, scale:1}} 
-    transition={{delay:1.15, duration: 0.74, ease:"easeOut", type:"spring", stiffness:30}}
+    transition={{delay:1.15, duration: 0.24, ease:"easeOut", type:"spring", stiffness:30}}
     className='rows1'>
         <Rowsub
             link={"/pdm"}

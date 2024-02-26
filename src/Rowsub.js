@@ -31,7 +31,7 @@ function Rowsub({image, title, link, image2}){
         <m.img 
         initial={{filter:"blur(5px)", opacity:0}}
         animate={{filter:"blur(0px)", opacity:1}} 
-        transition={{delay:4, duration:0.3}}
+        transition={{delay:1, duration:0.3}}
         className='rowsub__image'src={over? image2:image} />
         
         

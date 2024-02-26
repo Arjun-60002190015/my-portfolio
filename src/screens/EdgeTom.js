@@ -38,10 +38,11 @@ function EdgeTom() {
      animate={{opacity:1, filter: "blur(0px)",}}
      transition={{delay:4 ,duration: 2, ease:"easeOut"}}
      className='year_content'>
-        <m.h2 className='year'  >2014</m.h2>
-        <button className='rating_button'>
-    <m.h2 className='rating'  >UA</m.h2>
-    </button>
+        <m.h2 className='year'  >2014 </m.h2>
+        <m.h2 className='year' > • </m.h2>
+        <m.h2 className='year' > UA </m.h2>
+        
+    <m.h2 className='year' > • </m.h2>
     <m.h2 className='length' >1h53m</m.h2>
     </m.div>
         <m.p initial={{opacity:0, filter: "blur(2px)",}}
@@ -68,6 +69,10 @@ function EdgeTom() {
     </m.div>
   )
 }
+
+/*
+<m.h2 className='year' > • </m.h2>
+*/
 
 /*
 
