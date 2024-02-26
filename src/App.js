@@ -25,6 +25,7 @@ import Spotify from './screens/Spotify';
 import {motion as m} from 'framer-motion';
 import InfiniteNav from './InfiniteNav';
 import Banner from './Banner';
+import Skills from './screens/Skills';
 
 
 function App() {
@@ -98,6 +99,7 @@ function App() {
           <Route path="/amazon" element={<Amazon />} />
           <Route path="/carousel" element={<InfiniteNav/>} />
           <Route path="/banner" element={<Banner/>} />
+          <Route path="/skills" element={<Skills/>} />
           
         </Routes>
         

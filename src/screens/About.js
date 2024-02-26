@@ -35,7 +35,7 @@ function About() {
       
     initial={{opacity:0}}
     animate={{opacity:1}} 
-    transition={{delay:1.15, duration: 2, ease:"easeOut"}}onClick={() => history("/education")} 
+    transition={{delay:1.15, duration: 2, ease:"easeOut"}}onClick={() => history("/skills")} 
       className='about__button'> 
       <h1>My Skills</h1>
 

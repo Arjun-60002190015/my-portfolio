@@ -54,7 +54,7 @@ function ProfileScreen(onLoginButtonClick) {
             image={'https://i.pinimg.com/474x/5b/50/e7/5b50e75d07c726d36f397f6359098f58.jpg'}
             title={"Education"}/>
 
-<Prof link={"/education"}
+<Prof link={"/skills"}
 image={'https://i.pinimg.com/564x/b2/a0/29/b2a029a6c2757e9d3a09265e3d07d49d.jpg'}
             title={"Skills"}/>
 
