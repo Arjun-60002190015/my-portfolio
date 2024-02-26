@@ -27,7 +27,7 @@ function About() {
       <m.h2 >I am a 22 year old software enthusiast / 
         self proclaimed movie-expert interested 
         in real world problems. I have been programming since 2.5 years now and love to solve problems 
-        and learn new algorithms. Looking for developmental roles and would love to improve the software landscape in general.</m.h2>
+        and explore algorithms. Looking for developmental roles and would love to improve the software landscape in general.</m.h2>
       
         
       </m.div>
