@@ -46,7 +46,7 @@ return (
 
 
       </m.p>
-    <Link to={"https://github.com/Arjun-60002190015/spotify-app"}>
+    <Link to={"https://github.com/Arjun-60002190015/netflix-clone"}>
       <m.button   initial={{opacity:0, filter:"blur(5px)"}}
   animate={{opacity:1, filter:"blur(0px)"}}
   transition={{delay:4 ,duration: 2, ease:"easeOut"}} 
