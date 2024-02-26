@@ -14,6 +14,7 @@ function Row5() {
             link={"/eot"}
             image={"https://www.wallpaperflare.com/static/527/639/639/edge-of-tomorrow-tom-cruise-emily-blunt-movie-poster-wallpaper.jpg"}
             title={"Edge Of Tomorrow (2014)"}
+            image2={"https://images.bauerhosting.com/legacy/empire-images/articles/5c7c1b4f133d503e3a4760a8/edge-of-tomorrow.jpg?ar=16%3A9&fit=crop&crop=top&auto=format&w=1440&q=80"}
         />
       
     </m.div>

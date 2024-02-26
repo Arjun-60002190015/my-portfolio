@@ -35,7 +35,7 @@ function ProfileScreen(onLoginButtonClick) {
         </m.div>
         <m.div initial={{x:-5, y:20, opacity:0}}
         animate={{x:-5, y:20, opacity:1}}
-        transition={{delay:1.5, duration: 1 , ease:"easeOut" }} 
+        transition={{delay:1.5, duration: 0.5 , ease:"easeOut" }} 
         className='profileScreen__info'>
             
             <Prof 

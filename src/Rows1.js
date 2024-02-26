@@ -19,19 +19,21 @@ function Rows1() {
             link={"/pdm"}
             image={"https://media.post.rvohealth.io/wp-content/uploads/2020/09/11008-Parkinsons_Disease_1200x628-facebook-1200x628.jpg"}
             title={"Parkinson's Detection Model"}
-            image2={"https://cdn.thewirecutter.com/wp-content/media/2022/06/home-security-system-2048px-5235-2x1-1.jpg?auto=webp&quality=75&crop=2:1&width=1024"}
+            image2={"https://healthsciences.ku.dk/newsfaculty-news/2023/10/Parkinsons.png"}
             />
 
-      <Rowsub
+        <Rowsub
               link={"/hsa"}
               image={"https://cdn.thewirecutter.com/wp-content/media/2022/06/home-security-system-2048px-5235-2x1-1.jpg?auto=webp&quality=75&crop=2:1&width=1024"}
               title={"Home Security and Automation"}
+              image2={"https://cdn.shopify.com/s/files/1/0504/7094/4954/files/2x_768x394_2668d8f6-fffd-4a41-a4c6-1e4e3740cf10_750x.jpg?v=1702547496"}
           />
         
         <Rowsub
               link={"/bds"}
               image={"https://blog-c7ff.kxcdn.com/blog/wp-content/uploads/2019/11/Banner-Blog-1A-1.jpg"}
               title={"Basic data structures"}
+              image2={"https://simplesnippets.tech/wp-content/uploads/2021/10/directed-vs-undirected-graph-data-structure.jpg"}
           />
          
 
