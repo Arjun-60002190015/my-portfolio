@@ -35,12 +35,12 @@
 
 .about__talk>h2{
     color: white;
-    font-size: 20px;
+    font-size: 17px;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
 }
 
 .about__button{
-    position: absolute;
+    position:relative;
     top:55%;
     margin-left: 40%;
     margin-right: 40%;
