@@ -39,9 +39,7 @@ function Rows4(link, image, title) {
              title={"Topological Sort"}
              image2={"https://lh4.googleusercontent.com/qurCfBN4AKxaTHV6AzWWgIEd6g0hrxKvc1h_FSe0e51toCqat18fIoGnHxlsDUSX9TU_6VtQaYrbjwTGv-a3R82tHcFx4T509_sLTLT_7F73EqX32-lX18K70eYc3Va8YmI8vhCNb4tjgPK_FTH5Cm0M7Q_s1JbWFKUlNgkY3tWI1VMMDfo9gXD7_Q"}
          />
-         <div className='see__more'>
-          see more
-         </div>
+         
    
           
         
