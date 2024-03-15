@@ -4,9 +4,14 @@ import axios from './axios';
 import requests from './Requests';
 import {motion as m} from 'framer-motion';
 import Marquee from 'react-fast-marquee';
+import { useRef} from 'react';
+import {useInView } from 'framer-motion';
 
 function Banner() {
     const[movie, setMovie] = useState([]);
+    const ref = useRef(null);
+    const isInView = useInView(ref, {once:false});
+
 
     useEffect(() => {
         async function fetchData() {
@@ -42,34 +47,34 @@ function Banner() {
         <m.div 
         initial={ {opacity:-1}}
         animate={{opacity:1}} 
-        transition={{delay: 0.75 , duration: 3, ease:"easeOut"}}
+        transition={{delay: 0.75 , duration: 2, ease:"easeOut"}}
         className='banner__overlay'></m.div>
         <m.div
     initial={ {opacity:-1}}
     animate={{opacity:1}} 
-    transition={{delay: 0.75 , duration: 3, ease:"easeOut"}}
+    transition={{delay: 0.75 , duration: 2, ease:"easeOut"}}
     className='banner__contents'>
             <m.h1 
-            initial ={{filter:"blur(5px)"}}
-            animate= {{filter:"blur(0)"}}  
-            transition={{delay: 0.75, duration:3, ease:"easeInOut"}}
+            initial ={{y:20, filter:"blur(5px)"}}
+            whileInView= {{y:0, filter:"blur(0)"}}  
+            transition={{duration:0.3, ease:"easeInOut"}}
             className='banner__title'>
                 
                 Arjun Pathak
             </m.h1>
             <m.div 
-            initial ={{filter:"blur(5px)"}}
-            animate= {{filter:"blur(0)"}}  
-            transition={{delay: 1, duration:5, ease:"easeInOut"}}
+            initial ={{y:20, filter:"blur(5px)"}}
+            whileInView= {{y:0, filter:"blur(0)"}}  
+            transition={{duration:0.3, ease:"easeInOut"}}
             className='banner__buttons'>
                 <button className='banner__button'>Engineer</button>
                 <button className='banner__button'>22</button>
 
             </m.div>
             <m.h1 
-            initial={{filter:"blur(5px)"}}
-            animate={{filter:"blur(0px)"}} 
-            transition={{delay: 1.5, duration: 7, ease:"easeOut"}}
+            initial={{y:20, filter:"blur(5px)"}}
+            whileInView={{y:0, filter:"blur(0px)"}} 
+            transition={{duration: 0.3, ease:"easeOut"}}
             className='banner__description'>
                 Projects and links are below.
                 To know more about me, click on the profile button.

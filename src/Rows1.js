@@ -11,8 +11,8 @@ function Rows1() {
 
   return (
     <m.div
-    initial={{x:15, scale:0}}
-    animate={{x:15, scale:1}} 
+    initial={{x:15}}
+    animate={{x:15}} 
     transition={{delay:1.15, duration: 0.24, ease:"easeOut", type:"spring", stiffness:30}}
     className='rows1'>
         <Rowsub
@@ -31,7 +31,7 @@ function Rows1() {
         
         <Rowsub
               link={"/bds"}
-              image={"https://blog-c7ff.kxcdn.com/blog/wp-content/uploads/2019/11/Banner-Blog-1A-1.jpg"}
+              image={"https://media.sproutsocial.com/uploads/2022/11/sprout_FacebookAlgorithm_Outline.jpg"}
               title={"Basic data structures"}
               image2={"https://simplesnippets.tech/wp-content/uploads/2021/10/directed-vs-undirected-graph-data-structure.jpg"}
           />

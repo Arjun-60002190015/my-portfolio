@@ -21,8 +21,8 @@ function Rowsub({image, title, link, image2}){
        
        backgroundColor: "rgb(0, 3, 0)"
     }}
-    initial={{opacity:-1}}
-    whileInView={{opacity:1}}
+    initial={{y:20, opacity:-1}}
+    whileInView={{y:0, opacity:1}}
 
     className='rowsub'>
       <Link
@@ -31,15 +31,14 @@ function Rowsub({image, title, link, image2}){
         <m.img 
         initial={{filter:"blur(5px)", opacity:0}}
         animate={{filter:"blur(0px)", opacity:1}} 
-        transition={{delay:1, duration:0.3}}
+        transition={{delay:1, duration:0.9}}
         className='rowsub__image'src={over? image2:image} />
         
         
       </Link >
       
       <h2 ref={ref}><span style={{
-        transform: isInView? "none": "translateX(-200px", 
-        opacity: isInView? 1:0,
+        
         
         transition: "all 2s cubic-bezier(0.17, 0.55, 0.55, 1) 2s"
       }}></span>{title}</h2>

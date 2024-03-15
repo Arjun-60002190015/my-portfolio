@@ -6,8 +6,8 @@ import {motion as m} from 'framer-motion';
 function Rows2() {
     return (
         <m.div
-        initial={{x:15, scale:0}}
-        animate={{x:15, scale:1}} 
+        initial={{x:15}}
+        animate={{x:15}} 
     transition={{delay:1.15, duration: 0.74, ease:"easeOut"}} className='rows2'>
           
             
@@ -45,7 +45,7 @@ function Rows2() {
                   image2={"https://www.livemint.com/lm-img/img/2023/12/14/1600x900/Europe-Meta-1_1702518350196_1702518378124.jpg"}
               />
               <Rowsub
-                  link={"https://drive.google.com/file/d/1Uk4VJ4nn0xh5LTBO0qrVY1P9PlKE77Qa/view?usp=sharing"}
+                  link={"https://drive.google.com/file/d/1anMj3flKq8Nh_MQ4Fht25QzNnwTsbaxo/view?usp=sharing"}
                   image={"https://cdn-01.cms-ap-v2i.applyflow.com/mayday-recruitment/wp-content/cache/bb-plugin/cache/thumbnail-photos-Website-7-landscape.png"}
                   title={"My Resume"}
                   image2={"https://www.naukri.com/cloudgateway-fastforward/ff-content-services/v0/unauth/cms/photo?id=397b349f96860933027280e10d1c2a936b86ccb4b208b654d3cabeecea02fcf2bad42677086fa51b134f36026db7733484038b372d821a275ee459b039d4c4b4a67e4c556fce8bf0f6619791241fee1f&postTypeId=c4eff10da33c562d3e88af8f60fcf6cecdf3e35370f49177&source=ff"}
